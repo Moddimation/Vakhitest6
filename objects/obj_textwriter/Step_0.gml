@@ -10,6 +10,9 @@ if(textpos<=string_length(textorigin)){
 		textpos++;
 		linepos=0;
 	}
+	if(string_char_at(textorigin, textpos) == "^"){
+		
+	}
 	textcurrent += string_char_at(textorigin, textpos);
 	textpos++;
 }

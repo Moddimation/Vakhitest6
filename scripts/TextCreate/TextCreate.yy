@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Room",
+  "name": "TextCreate",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
