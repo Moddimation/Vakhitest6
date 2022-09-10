@@ -6,7 +6,7 @@
     "name": "tile_boundtest",
     "path": "sprites/tile_boundtest/tile_boundtest.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
