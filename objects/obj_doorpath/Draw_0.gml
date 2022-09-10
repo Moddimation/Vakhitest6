@@ -1,0 +1,1 @@
+if(global.debug && global.show_bound) draw_self();
