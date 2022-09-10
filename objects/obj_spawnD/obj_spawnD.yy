@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_spawnA",
+  "name": "obj_spawnD",
   "spriteId": {
-    "name": "tile_spawnA",
-    "path": "sprites/tile_spawnA/tile_spawnA.yy",
+    "name": "tile_spawnD",
+    "path": "sprites/tile_spawnD/tile_spawnD.yy",
   },
   "solid": false,
   "visible": true,

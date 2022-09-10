@@ -23,6 +23,6 @@ if(roomchange){
 function gotoroom()
 {
 	roomchange=false;
-	player.x=0;
+	player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
 	room_goto(nextroom);
 }

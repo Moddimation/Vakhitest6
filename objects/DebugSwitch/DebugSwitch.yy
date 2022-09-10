@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_spawnA",
-  "spriteId": {
-    "name": "tile_spawnA",
-    "path": "sprites/tile_spawnA/tile_spawnA.yy",
-  },
+  "name": "DebugSwitch",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,13 +22,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":75,"eventType":9,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "group_spawn",
-    "path": "folders/Objects/group_spawn.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

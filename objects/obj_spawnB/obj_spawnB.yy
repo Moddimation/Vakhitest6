@@ -1,9 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "pt_bound",
-  "spriteId": null,
-  "solid": true,
+  "name": "obj_spawnB",
+  "spriteId": {
+    "name": "tile_spawnB",
+    "path": "sprites/tile_spawnB/tile_spawnB.yy",
+  },
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -22,12 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":75,"eventType":9,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "group_spawn",
+    "path": "folders/Objects/group_spawn.yy",
   },
 }
