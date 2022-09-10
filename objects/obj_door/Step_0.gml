@@ -22,6 +22,7 @@ if(roomchange){
 }
 function gotoroom()
 {
+	global.spawnid=spwnid;
 	roomchange=false;
 //	player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
 	room_goto(nextroom);
