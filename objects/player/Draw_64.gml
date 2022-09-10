@@ -1,3 +1,4 @@
 printdbg("x: "+string(x)+" y: "+string(y),0);
-printdbg(string(room_get_name(room))+", id:"+string(room),1);
-printdbg(string(global.spawnid),2);
+printdbg(string(room_get_name(room))+", roomid: "+string(room),1);
+printdbg("spawnid: "+string(global.spawnid)+", blockedinput: "+string(blockinput),2);
+printdbg("Press \'Ctrl+D\' for Debug Menu, \'K\' to un/hide bounds",36);

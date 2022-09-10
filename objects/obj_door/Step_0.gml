@@ -1,6 +1,6 @@
 if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, player, false, true)) roomchange=true;
 if(roomchange){
-	show_debug_message(string(nextroom));
+	player.blockinput=true;
 	switch(image_angle){
 		case 0: //RIGHT
 			if(player.x<x+walkoffset) { player.x+=player.walkspeed; player.sprite_index = anm_plwalkright; }
@@ -24,6 +24,7 @@ function gotoroom()
 {
 	global.spawnid=spwnid;
 	roomchange=false;
+	player.blockinput=false;
 //	player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
 	room_goto(nextroom);
 }

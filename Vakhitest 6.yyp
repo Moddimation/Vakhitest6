@@ -32,6 +32,7 @@
     {"id":{"name":"room_testdoor","path":"rooms/room_testdoor/room_testdoor.yy",},"order":2,},
     {"id":{"name":"Main_Init","path":"scripts/Main_Init/Main_Init.yy",},"order":2,},
     {"id":{"name":"tile_spawnA","path":"sprites/tile_spawnA/tile_spawnA.yy",},"order":13,},
+    {"id":{"name":"obj_textwriter","path":"objects/obj_textwriter/obj_textwriter.yy",},"order":10,},
     {"id":{"name":"tile_door","path":"sprites/tile_door/tile_door.yy",},"order":10,},
     {"id":{"name":"tile_spawnD","path":"sprites/tile_spawnD/tile_spawnD.yy",},"order":18,},
     {"id":{"name":"Title","path":"rooms/Title/Title.yy",},"order":0,},
