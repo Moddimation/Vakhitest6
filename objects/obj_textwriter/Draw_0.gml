@@ -1,1 +1,1 @@
-draw_text(x, y, textcurrent);
+draw_text_transformed(x, y, textcurrent, textsize, textsize, image_angle);

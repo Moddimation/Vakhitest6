@@ -1,1 +1,0 @@
-print_anm(txt, x, y, maxchars, maxlines);

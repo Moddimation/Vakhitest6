@@ -21,7 +21,6 @@
     {"id":{"name":"tile_spawnF","path":"sprites/tile_spawnF/tile_spawnF.yy",},"order":16,},
     {"id":{"name":"obj_menubuttonspr","path":"objects/obj_menubuttonspr/obj_menubuttonspr.yy",},"order":0,},
     {"id":{"name":"player","path":"objects/player/player.yy",},"order":0,},
-    {"id":{"name":"obj_writertest","path":"objects/obj_writertest/obj_writertest.yy",},"order":11,},
     {"id":{"name":"obj_spawnC","path":"objects/obj_spawnC/obj_spawnC.yy",},"order":2,},
     {"id":{"name":"obj_spawnA","path":"objects/obj_spawnA/obj_spawnA.yy",},"order":0,},
     {"id":{"name":"DebugSwitch","path":"objects/DebugSwitch/DebugSwitch.yy",},"order":9,},
