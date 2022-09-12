@@ -41,6 +41,7 @@
     {"id":{"name":"obj_textwriter","path":"objects/obj_textwriter/obj_textwriter.yy",},"order":10,},
     {"id":{"name":"tile_door","path":"sprites/tile_door/tile_door.yy",},"order":10,},
     {"id":{"name":"tile_spawnD","path":"sprites/tile_spawnD/tile_spawnD.yy",},"order":18,},
+    {"id":{"name":"To Do","path":"notes/To Do/To Do.yy",},"order":0,},
     {"id":{"name":"Title","path":"rooms/Title/Title.yy",},"order":0,},
   ],
   "Options": [
