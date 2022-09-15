@@ -17,7 +17,6 @@
     {"id":{"name":"tile_spawnE","path":"sprites/tile_spawnE/tile_spawnE.yy",},"order":17,},
     {"id":{"name":"tile_buttonplhd","path":"sprites/tile_buttonplhd/tile_buttonplhd.yy",},"order":20,},
     {"id":{"name":"room_testcollision","path":"rooms/room_testcollision/room_testcollision.yy",},"order":1,},
-    {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},"order":15,},
     {"id":{"name":"tile_spawnF","path":"sprites/tile_spawnF/tile_spawnF.yy",},"order":16,},
     {"id":{"name":"obj_menubuttonspr","path":"objects/obj_menubuttonspr/obj_menubuttonspr.yy",},"order":0,},
     {"id":{"name":"player","path":"objects/player/player.yy",},"order":0,},
@@ -25,7 +24,6 @@
     {"id":{"name":"obj_spawnA","path":"objects/obj_spawnA/obj_spawnA.yy",},"order":0,},
     {"id":{"name":"DebugSwitch","path":"objects/DebugSwitch/DebugSwitch.yy",},"order":9,},
     {"id":{"name":"obj_smolcoll","path":"objects/obj_smolcoll/obj_smolcoll.yy",},"order":3,},
-    {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},"order":16,},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":13,},
     {"id":{"name":"scr_debug","path":"scripts/scr_debug/scr_debug.yy",},"order":1,},
     {"id":{"name":"obj_spawnB","path":"objects/obj_spawnB/obj_spawnB.yy",},"order":1,},
@@ -46,6 +44,7 @@
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},"order":4,},
     {"id":{"name":"tile_spawnD","path":"sprites/tile_spawnD/tile_spawnD.yy",},"order":18,},
     {"id":{"name":"To Do","path":"notes/To Do/To Do.yy",},"order":0,},
+    {"id":{"name":"obj_textscreen","path":"objects/obj_textscreen/obj_textscreen.yy",},"order":15,},
     {"id":{"name":"Title","path":"rooms/Title/Title.yy",},"order":0,},
   ],
   "Options": [
