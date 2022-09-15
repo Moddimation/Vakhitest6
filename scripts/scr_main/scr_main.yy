@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "TextCreate",
+  "name": "scr_main",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

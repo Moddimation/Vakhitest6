@@ -1,4 +1,3 @@
-Add Smooth walking
 add textboxes(with buttons and etc)
 add npcs
 test aroud with graphics style

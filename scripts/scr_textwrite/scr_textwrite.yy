@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Main_Init",
+  "name": "scr_textwrite",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
