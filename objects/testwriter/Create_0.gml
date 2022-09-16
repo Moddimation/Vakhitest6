@@ -1,1 +1,1 @@
-print_box(2, 2);
+print_box(2, 1);
