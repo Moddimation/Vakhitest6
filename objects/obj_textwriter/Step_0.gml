@@ -19,6 +19,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            lineno++;
 	            textpos++;
 	            linepos=0;
+	            timercount+=timeoff*4;
 	        }
 	        if(string_char_at(textorigin, textpos) == "^"){ //used for custom timing
 	            timercount=timercount+( real(string_char_at(textorigin, textpos+1))*10 +timercount+ real(string_char_at(textorigin, textpos+2)) ) *5;
@@ -28,8 +29,10 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            timercount=timeoff*2;
 	        } else timercount--;
 	        if(timercount==0 and !printdone) { //assign current letter to textcurrent, print textcurrent in draw event
-	            textcurrent += string_char_at(textorigin, textpos);
+				var txchar = string_char_at(textorigin, textpos);
+	            textcurrent += txchar;
 	            textpos++;
+				if(ord(txchar)>33) audio_play_sound(snd_txt_test, 1, false);
 	        }
 	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; }
 	} else textcurrent = textorigin;
