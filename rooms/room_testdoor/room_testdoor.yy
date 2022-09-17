@@ -19,7 +19,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3EB4034_1_1","properties":[],"isDnd":false,"objectId":{"name":"player","path":"objects/player/player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.4,"scaleY":3.9333334,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5364DD43_1","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"nextroom","path":"objects/obj_door/obj_door.yy",},"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"value":"room_testcollision",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spwnid","path":"objects/obj_door/obj_door.yy",},"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"value":"1",},
           ],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-90.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":544.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6D1B93D3","properties":[
@@ -44,13 +43,13 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_3EB4034_1_1","path":"rooms/room_testdoor/room_testdoor.yy",},
-    {"name":"inst_5364DD43_1","path":"rooms/room_testdoor/room_testdoor.yy",},
     {"name":"inst_6D1B93D3","path":"rooms/room_testdoor/room_testdoor.yy",},
     {"name":"inst_343EF912","path":"rooms/room_testdoor/room_testdoor.yy",},
     {"name":"inst_69D500C5","path":"rooms/room_testdoor/room_testdoor.yy",},
     {"name":"inst_36471826","path":"rooms/room_testdoor/room_testdoor.yy",},
     {"name":"inst_3F90948","path":"rooms/room_testdoor/room_testdoor.yy",},
     {"name":"inst_4FF57B78","path":"rooms/room_testdoor/room_testdoor.yy",},
+    {"name":"inst_5364DD43_1","path":"rooms/room_testdoor/room_testdoor.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

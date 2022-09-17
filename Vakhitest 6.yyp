@@ -27,6 +27,7 @@
     {"id":{"name":"DebugSwitch","path":"objects/DebugSwitch/DebugSwitch.yy",},"order":9,},
     {"id":{"name":"obj_smolcoll","path":"objects/obj_smolcoll/obj_smolcoll.yy",},"order":3,},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":13,},
+    {"id":{"name":"room_error","path":"rooms/room_error/room_error.yy",},"order":7,},
     {"id":{"name":"scr_debug","path":"scripts/scr_debug/scr_debug.yy",},"order":1,},
     {"id":{"name":"obj_spawnB","path":"objects/obj_spawnB/obj_spawnB.yy",},"order":1,},
     {"id":{"name":"scr_textwrite","path":"scripts/scr_textwrite/scr_textwrite.yy",},"order":3,},
@@ -79,6 +80,7 @@
     {"roomId":{"name":"menu_test","path":"rooms/menu_test/menu_test.yy",},},
     {"roomId":{"name":"room_testmessage","path":"rooms/room_testmessage/room_testmessage.yy",},},
     {"roomId":{"name":"menu_title","path":"rooms/menu_title/menu_title.yy",},},
+    {"roomId":{"name":"room_error","path":"rooms/room_error/room_error.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

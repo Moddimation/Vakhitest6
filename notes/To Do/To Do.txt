@@ -1,6 +1,7 @@
 add textboxes(with buttons and etc)
 add npcs
 test aroud with graphics style
+fix multiple text(assign all msgs to local variable first time)
 
 
 
@@ -12,5 +13,4 @@ test aroud with graphics style
 
 
 
-
-be determined :)
+be determined
