@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function printdbg(_string, _row=0){
-	draw_text(0, _row*16, _string);
+	if(global.debug) draw_text(0, _row*16, _string);
 }

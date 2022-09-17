@@ -1,4 +1,4 @@
-global.debug=1; //dont you dare (:
+global.debug=0; //dont you dare (:
 if(global.debug) {
 	global.show_bound=true;
 	global.menum=0;
