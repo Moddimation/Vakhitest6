@@ -33,4 +33,4 @@ if(string_char_at(textorigin, textpos) != "%"){
 	        }
 	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; }
 	} else textcurrent = textorigin;
-}
+} else if(keyboard_check(vk_enter)) instance_destroy();

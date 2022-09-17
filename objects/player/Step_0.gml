@@ -23,4 +23,6 @@ if(!blockinput){
 	if(not keyboard_check(vk_down) and not keyboard_check(vk_up) and not keyboard_check(vk_left) and not keyboard_check(vk_right)){
 		image_speed=0; image_index=0;	
 	}
+} else if(!blockmoving){
+	image_speed=0; image_index=0;	
 }

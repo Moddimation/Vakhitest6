@@ -1,6 +1,7 @@
 sizex=20;
 sizey=180;
-	var textoff=13;
+player.blockinput=true;
+var textoff=13;
 mytext = instance_create_depth(sizex+textoff-2,window_get_height()-sizey+textoff, -1, obj_textwriter, {
 	msgide : msgd,
 	maxlineno : 2,

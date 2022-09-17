@@ -3,7 +3,7 @@
 walkspeed = 4;
 image_speed = walkspeed/16;
 collspeed=walkspeed*2;
-blockinput=false;
+blockinput=false; blockmoving=false;
 var plscale=3.9;
 image_xscale = plscale;
 image_yscale = plscale;

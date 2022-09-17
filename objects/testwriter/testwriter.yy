@@ -2,8 +2,11 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "testwriter",
-  "spriteId": null,
-  "solid": false,
+  "spriteId": {
+    "name": "npc_test",
+    "path": "sprites/npc_test/npc_test.yy",
+  },
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -23,6 +26,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":13,"eventType":9,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

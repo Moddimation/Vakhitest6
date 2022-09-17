@@ -1,0 +1,1 @@
+if(!instance_exists(mytext)) { instance_destroy(); player.blockinput=false; }
