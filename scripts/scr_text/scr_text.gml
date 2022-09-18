@@ -13,7 +13,7 @@ function texttable(_msgid){
 			global.msg[1] = "&Press F1 to get back%";
 			break;
 		case 4:
-			global.msg[0] = "Some error occured lol";
+			global.msg[0] = "You just got error'd lol";
 			global.msg[1] = "Error Code: "+string(global.menum)+string(global.debug)+string(global.show_bound)+string(global.spawnid)+"%";
 			break;
 		default:

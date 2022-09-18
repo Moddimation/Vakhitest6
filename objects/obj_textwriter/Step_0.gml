@@ -1,4 +1,4 @@
-if(!printdone) textorigin=global.msg[txtglcount];
+if(!printdone) textorigin=textmessage[txtglcount];
 if(string_char_at(textorigin, textpos) != "%"){
 	if(timeoff!=0) { //if timer is 0, dont animate at all and display directly
 	    if(textpos<=string_length(textorigin)){
