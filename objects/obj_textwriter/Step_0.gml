@@ -1,8 +1,8 @@
 if(!printdone) textorigin=textmessage[txtglcount];
 if(string_char_at(textorigin, textpos) != "%"){
 	if(timeoff!=0) { //if timer is 0, dont animate at all and display directly
-	    if(textpos<=string_length(textorigin)){
-			if(lineno==0 and textpos==1 and string_char_at(textorigin, 0)==">"){
+	    if(textpos<=string_length(textorigin)-textposoff){
+			if(string_char_at(textorigin, textpos)==">"){
 				charrand = real(string_char_at(textorigin, 2));
 				textpos+=2;
 			}
@@ -20,10 +20,12 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            textpos++;
 	            linepos=0;
 	            timercount+=timeoff*4;
+				textposoff++;
 	        }
 	        if(string_char_at(textorigin, textpos) == "^"){ //used for custom timing
 	            timercount=timercount+( real(string_char_at(textorigin, textpos+1))*10 +timercount+ real(string_char_at(textorigin, textpos+2)) ) *5;
 	            textpos+=3;
+				textposoff+=3;
 	        }
 	        if(timercount==-1){//reset timercount
 	            timercount=timeoff*2;
@@ -34,6 +36,6 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            textpos++;
 				if(ord(txchar)>33) audio_play_sound(snd_txt_test, 1, false);
 	        }
-	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; }
+	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; textposoff=0; }
 	} else { if(!printdone) textcurrent += textorigin; if(string_last_pos("%", textcurrent)==0) { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; } else printdone=1 } 
 } else if(keyboard_check_pressed(vk_enter)) instance_destroy();

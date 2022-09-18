@@ -8,3 +8,4 @@ txtglcount=0;
 charrand=0;
 texttable(msgide);
 textmessage=global.msg;
+textposoff=0;

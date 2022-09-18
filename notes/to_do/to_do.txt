@@ -1,11 +1,7 @@
 add textboxes(with buttons and etc)
 add npcs
 test aroud with graphics style
-fix multiple text(assign all msgs to local variable first time)
 add vocal msg test
-make some better door2door system(numerize doors, place spawnpoint at doorpath and add walking bool)
-
-
 
 
 
@@ -16,4 +12,4 @@ make some better door2door system(numerize doors, place spawnpoint at doorpath a
 
 
 be determined
-Error Code: prev. room number, debug mode bool, show bounds bool,  spawnid number
+Error Code: room number, debugmode bool, showbounds bool,  spawnid number

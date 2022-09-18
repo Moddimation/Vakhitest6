@@ -1,7 +1,7 @@
 {
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
-  "name": "Vakhitest 6",
+  "name": "Vakhitest6",
   "resources": [
     {"id":{"name":"tile_doorpath","path":"sprites/tile_doorpath/tile_doorpath.yy",},"order":12,},
     {"id":{"name":"tile_boundlongR","path":"sprites/tile_boundlongR/tile_boundlongR.yy",},"order":23,},
@@ -47,6 +47,7 @@
     {"id":{"name":"tile_menutest","path":"sprites/tile_menutest/tile_menutest.yy",},"order":19,},
     {"id":{"name":"obj_textwriter","path":"objects/obj_textwriter/obj_textwriter.yy",},"order":10,},
     {"id":{"name":"tile_door","path":"sprites/tile_door/tile_door.yy",},"order":10,},
+    {"id":{"name":"font_default","path":"fonts/font_default/font_default.yy",},"order":0,},
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},"order":4,},
     {"id":{"name":"tile_spawnD","path":"sprites/tile_spawnD/tile_spawnD.yy",},"order":18,},
     {"id":{"name":"to_do","path":"notes/to_do/to_do.yy",},"order":0,},
