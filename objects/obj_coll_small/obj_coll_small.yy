@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_smolcoll",
+  "name": "obj_coll_small",
   "spriteId": {
-    "name": "tile_boundtest",
-    "path": "sprites/tile_boundtest/tile_boundtest.yy",
+    "name": "tile_boundsmall",
+    "path": "sprites/tile_boundsmall/tile_boundsmall.yy",
   },
   "solid": true,
   "visible": true,

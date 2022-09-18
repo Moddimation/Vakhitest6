@@ -8,7 +8,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 			}
 	        if(maxlinepos==-1) maxlinepos=string_length(textorigin)+1; //if -1, detect maxlinepos automaticly
 	        if(lineno>maxlineno) printdone=true; //if max amount of lines reached make printdone true...
-	        if(printdone and keyboard_check(vk_enter)&&!textstatic){ //if printdone true and enter pressed, clear text and continue writing
+	        if(printdone and keyboard_check_pressed(vk_enter)&&!textstatic){ //if printdone true and enter pressed, clear text and continue writing
 	            textcurrent="";
 	            lineno=0;
 	            linepos=0;
@@ -36,4 +36,4 @@ if(string_char_at(textorigin, textpos) != "%"){
 	        }
 	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; }
 	} else { if(!printdone) textcurrent += textorigin; if(string_last_pos("%", textcurrent)==0) { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; } else printdone=1 } 
-} else if(keyboard_check(vk_enter)) instance_destroy();
+} else if(keyboard_check_pressed(vk_enter)) instance_destroy();
