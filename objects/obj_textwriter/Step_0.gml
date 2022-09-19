@@ -34,7 +34,35 @@ if(string_char_at(textorigin, textpos) != "%"){
 				var txchar = string_char_at(textorigin, textpos);
 	            textcurrent += txchar;
 	            textpos++;
-				if(ord(txchar)>33) audio_play_sound(snd_txt_test, 1, false);
+				if(ord(txchar)>33) switch(txt_snd){
+						case 1:
+							audio_play_sound(snd_txt_test0, 1, false);
+							break;
+						case 2:
+							audio_play_sound(snd_txt_test1, 1, false);
+							break;
+						case 3:
+							audio_play_sound(snd_txt_test2, 1, false);
+							break;
+						case 4:
+							audio_play_sound(snd_txt_test3, 1, false);
+							break;
+						case 5:
+							audio_play_sound(snd_txt_test4, 1, false);
+							break;
+						case 6:
+							audio_play_sound(snd_txt_test5, 1, false);
+							break;
+						case 7:
+							audio_play_sound(snd_txt_test6, 1, false);
+							break;
+						case 8:
+							audio_play_sound(snd_txt_test7, 1, false);
+							break;
+						case 9:
+							audio_play_sound(snd_txt_test8, 1, false);
+							break;
+					}
 	        }
 	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; textposoff=0; }
 	} else { if(!printdone) textcurrent += textorigin; if(string_last_pos("%", textcurrent)==0) { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; } else printdone=1 } 

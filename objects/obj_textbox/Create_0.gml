@@ -7,5 +7,6 @@ mytext = instance_create_depth(sizex+textoff-10,window_get_height()-sizey+textof
 	textstatic : false,
 	maxlineno : 2,
 	timeoff : timechar,
-	textsize : 2
+	textsize : 2,
+	txt_snd : self.txtsnd
 });
