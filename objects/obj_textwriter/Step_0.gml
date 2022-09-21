@@ -1,6 +1,17 @@
 if(!printdone) textorigin=textmessage[txtglcount];
 if(string_char_at(textorigin, textpos) != "%"){
-	if(timeoff!=0) { //if timer is 0, dont animate at all and display directly
+	if(timeoff==0||textstatic) { 
+		var prinaa=textorigin;
+		if(string_char_at(textorigin, string_length(textorigin)) == "%") prinaa = string_delete(textorigin, string_length(textorigin), 1); 
+		if(!printdone) textcurrent += prinaa;
+		if(string_last_pos("%", textorigin)==0) { 
+			textcurrent+="\n"; 
+			txtglcount++; 
+			textpos=1; 
+			lineno++; 
+		} else printdone=1 
+	}  
+	else {
 	    if(textpos<=string_length(textorigin)-textposoff){
 			if(string_char_at(textorigin, textpos)==">"){
 				charrand = real(string_char_at(textorigin, 2));
@@ -65,5 +76,5 @@ if(string_char_at(textorigin, textpos) != "%"){
 					}
 	        }
 	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; textposoff=0; }
-	} else { if(!printdone) textcurrent += textorigin; if(string_last_pos("%", textcurrent)==0) { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; } else printdone=1 } 
+	}
 } else if(keyboard_check_pressed(vk_enter)) instance_destroy();

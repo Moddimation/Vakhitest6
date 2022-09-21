@@ -8,6 +8,7 @@ if(plysnd!=playsnd){
 plysnd=playsnd;
 function createtext(){
 	wowie=instance_create_layer(x, y, "Instances", obj_textwriter, {
+		textmessage : global.msg,
 		textstatic : false,
 		maxlineno : 2,
 		maxlinepos : 420,

@@ -2,8 +2,9 @@ sizex=20;
 sizey=180;
 player.blockinput=true;
 var textoff=13;
+texttable(msgd);
 mytext = instance_create_depth(sizex+textoff-10,window_get_height()-sizey+textoff, -1, obj_textwriter, {
-	msgide : msgd,
+	textmessage : global.msg,
 	textstatic : false,
 	maxlineno : 2,
 	timeoff : timechar,

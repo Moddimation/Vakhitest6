@@ -6,6 +6,4 @@ timercount=-1;
 printdone=false;
 txtglcount=0;
 charrand=0;
-if(msgide!=0) texttable(msgide);
-textmessage=global.msg;
 textposoff=0;
