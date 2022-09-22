@@ -1,4 +1,4 @@
-if(!printdone) textorigin=textmessage[txtglcount];
+if(!printdone) if(is_array(textmessage)) textorigin=textmessage[txtglcount]; else textorigin=textmessage;
 if(string_char_at(textorigin, textpos) != "%"){
 	if(timeoff==0||textstatic) { 
 		var prinaa=textorigin;

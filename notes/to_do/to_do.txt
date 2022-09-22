@@ -3,7 +3,7 @@ add npcs
 test aroud with graphics style
 text: add string-command aka \& \^90 \>7 etc
 text: add string command operators for more stuff(y o u r   g o n n a   h a v e   a   b a d   t i m e)
-
+add menus
 
 
 
