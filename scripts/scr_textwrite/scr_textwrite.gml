@@ -1,6 +1,6 @@
 function print_text(_textid, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true){
 	texttable(_textid);
-	return instance_create_depth(_x, _y, -1, obj_textwriter, {
+	return instance_create_depth(_x, _y, 150, obj_textwriter, {
 		textmessage : global.msg,
 		textstatic : _textstatic,
 		maxlineno : _maxlines,
@@ -13,7 +13,7 @@ function print_text(_textid, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound
 }
 function print_txt(_texttxt, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true){
 	mesg[0] = _texttxt+"%";
-	return instance_create_depth(_x, _y, -1, obj_textwriter, {
+	return instance_create_depth(_x, _y, 150, obj_textwriter, {
 		textmessage : mesg,
 		textstatic : _textstatic,
 		maxlineno : _maxlines,
@@ -25,7 +25,7 @@ function print_txt(_texttxt, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound
 }
 function print_opt(_textid, _x, _y,  _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _optnum=0){
 	texttable(_textid);
-	return instance_create_depth(_x, _y, -1, obj_textwriter, {
+	return instance_create_depth(_x, _y, 90, obj_textwriter, {
 		textmessage : global.msg[_optnum],
 		textstatic : _textstatic,
 		maxlineno : _maxlines,
@@ -36,7 +36,7 @@ function print_opt(_textid, _x, _y,  _maxlines, _chartime, _txtsound=0, _textsiz
 	});
 }
 function print_box(_msgid, _chartime, _txtsound=0){
-	return instance_create_depth(0, 0, -1, obj_textbox, {
+	return instance_create_depth(0, 0, 150, obj_textbox, {
 		timechar : _chartime,
 		msgd : _msgid,
 		txtsnd : _txtsound
