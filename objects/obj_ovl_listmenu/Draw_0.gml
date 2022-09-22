@@ -4,7 +4,7 @@ draw_rectangle(pleft, ptop, pright, pbottom, true);
 if(!ranit) {
 	opt_num=0;
 	j=1;
-		for(i=1; i>=0; i++){
+	for(i=1; i>=0; i++){
 		if(i>xnum) {
 			j++;
 			i=1;
@@ -12,7 +12,7 @@ if(!ranit) {
 		if(j>ynum) {
 			break;
 		}
-			optxt[opt_num] = print_opt(opt_msgid, pleft+i*(xlen*2.5)-xlen*2, ptop+j*(ylen*3)-ylen*2, 1, 1, 1, 1, true, opt_num);
+		optxt[opt_num] = print_opt(opt_msgid, pleft+i*(xlen*2.5)-xlen*2, ptop+j*(ylen*3)-ylen*2, 1, 1, 1, 1, true, opt_num);
 		opt_num++;
 		ranit=true;
 	}

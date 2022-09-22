@@ -1,1 +1,1 @@
-event_perform(ev_create, 0);
+event_perform(ev_destroy, 0);
