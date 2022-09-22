@@ -28,6 +28,7 @@ function gotoroom()
 	player.blockinput=false;
 	player.blockmoving=false;
 //	player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
+	global.menum = room;
 	room_goto(nextroom);
 }
 

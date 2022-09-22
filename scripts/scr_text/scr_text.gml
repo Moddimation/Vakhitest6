@@ -10,7 +10,7 @@ function texttable(_msgid){
 			break;
 		case 3:
 			global.msg[0] = "DEBUG MENU HUB";
-			global.msg[1] = "&Press F1 to get back%";
+			global.msg[1] = "\nPress F1 to resume%";
 			break;
 		case 4:
 			global.msg[0] = "You just got error'd lol";
