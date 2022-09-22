@@ -9,8 +9,8 @@ function texttable(_msgid){
 			global.msg[5] = "* nvm^90%";
 			break;
 		case 3:
-			global.msg[0] = " DEBUG MENU HUB";
-			global.msg[1] = "\n\n\n\n\n\n\n\nPress F1 to resume%";
+			global.msg[0] = "  DEBUG MENU HUB";
+			global.msg[1] = "\n\n\n\n\n\n\n\nPress \'P\' to resume%";
 			break;
 		case 4:
 			global.msg[0] = "You just got error'd lol";
