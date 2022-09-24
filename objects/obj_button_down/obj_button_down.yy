@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "group_buttons",
+    "path": "folders/Objects/group_buttons.yy",
   },
 }

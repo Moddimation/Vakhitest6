@@ -33,7 +33,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "group_npc",
+    "path": "folders/Objects/group_npc.yy",
   },
 }

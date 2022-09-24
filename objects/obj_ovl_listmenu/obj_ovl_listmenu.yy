@@ -38,7 +38,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "group_hud",
+    "path": "folders/Objects/group_hud.yy",
   },
 }
