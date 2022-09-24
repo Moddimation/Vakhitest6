@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Vakhitest6",
   "resources": [
+    {"id":{"name":"obj_npcbeep","path":"objects/obj_npcbeep/obj_npcbeep.yy",},"order":2,},
     {"id":{"name":"snd_txt_test7","path":"sounds/snd_txt_test7/snd_txt_test7.yy",},"order":7,},
     {"id":{"name":"snd_txt_test8","path":"sounds/snd_txt_test8/snd_txt_test8.yy",},"order":8,},
     {"id":{"name":"tile_doorpath","path":"sprites/tile_doorpath/tile_doorpath.yy",},"order":4,},
@@ -15,6 +16,7 @@
     {"id":{"name":"anm_plwalkup","path":"sprites/anm_plwalkup/anm_plwalkup.yy",},"order":3,},
     {"id":{"name":"snd_txt_test0","path":"sounds/snd_txt_test0/snd_txt_test0.yy",},"order":0,},
     {"id":{"name":"obj_button_down","path":"objects/obj_button_down/obj_button_down.yy",},"order":3,},
+    {"id":{"name":"anm_npcbeep","path":"sprites/anm_npcbeep/anm_npcbeep.yy",},"order":6,},
     {"id":{"name":"anm_plwalkleft","path":"sprites/anm_plwalkleft/anm_plwalkleft.yy",},"order":1,},
     {"id":{"name":"anm_plwalkright","path":"sprites/anm_plwalkright/anm_plwalkright.yy",},"order":2,},
     {"id":{"name":"obj_npcdance","path":"objects/obj_npcdance/obj_npcdance.yy",},"order":1,},
