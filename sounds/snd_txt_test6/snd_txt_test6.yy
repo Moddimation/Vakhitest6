@@ -18,6 +18,6 @@
   "duration": 0.100952,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "path": "folders/Fonts/Sounds.yy",
   },
 }

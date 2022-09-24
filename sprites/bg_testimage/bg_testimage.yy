@@ -67,7 +67,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Extensions",
-    "path": "folders/Extensions.yy",
+    "name": "Backgrounds",
+    "path": "folders/Backgrounds.yy",
   },
 }
