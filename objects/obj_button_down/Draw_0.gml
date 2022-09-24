@@ -1,5 +1,7 @@
 
 if(os_type!=os_android) instance_destroy();
+if(!instance_exists(player)) instance_deactivate_object(object_index);
+else instance_activate_object(object_index);
 key = virtual_key_add(bbox_left, bbox_top, bbox_right - bbox_left, bbox_bottom - bbox_top, vk_down);
 draw_self();
 
