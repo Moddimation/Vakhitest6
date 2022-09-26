@@ -1,27 +1,40 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 //MOVEMENT
 image_speed = walkspeed/16;
 if(!blockinput){
 	if(keyboard_check(vk_up)){
-		if(place_free(x, y-collspeed)) y-=walkspeed;
-		sprite_index = anm_plwalkup;
+		walkup();
 	}
 	else if(keyboard_check(vk_down)){
-		if(place_free(x, y+collspeed)) y+=walkspeed;
-		sprite_index = anm_plwalkdown;
+		walkdown();
 	}
 	if(keyboard_check(vk_left)){
-		if(place_free(x-collspeed, y)) x-=walkspeed;
-		sprite_index = anm_plwalkleft;
+		walkleft();
 	}
 	else if(keyboard_check(vk_right)){
-		if(place_free(x+collspeed, y)) x+=walkspeed;
-		sprite_index = anm_plwalkright ;
+		walkright();
 	}
 	if(not keyboard_check(vk_down) and not keyboard_check(vk_up) and not keyboard_check(vk_left) and not keyboard_check(vk_right)){
-		image_speed=0; image_index=0;	
+		image_speed=0; image_index=0;
+		facing=0;
+	} else {
+		if(!keyboard_check(vk_up)) isdir[1]=false;
+		if(!keyboard_check(vk_down)) isdir[2]=false;
+		if(!keyboard_check(vk_left)) isdir[3]=false;
+		if(!keyboard_check(vk_right)) isdir[4]=false;
+	}
+	switch(facing){
+		case 1:
+			sprite_index = anm_plwalkup;
+			break;
+		case 2:
+			sprite_index = anm_plwalkdown;
+			break;
+		case 3:
+			sprite_index = anm_plwalkleft;
+			break;
+		case 4:
+			sprite_index = anm_plwalkright;
+			break;
 	}
 } else if(!blockmoving){
 	image_speed=0; image_index=0;	

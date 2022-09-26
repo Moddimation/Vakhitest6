@@ -17,7 +17,7 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_516EFE4C","properties":[],"isDnd":false,"objectId":{"name":"obj_npcdance","path":"objects/obj_npcdance/obj_npcdance.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4278190335,"rotation":0.0,"scaleX":11.0,"scaleY":11.0,"imageIndex":0,"imageSpeed":0.9,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":704.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_516EFE4C","properties":[],"isDnd":false,"objectId":{"name":"obj_npcdance","path":"objects/obj_npcdance/obj_npcdance.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4278190335,"rotation":0.0,"scaleX":12.0,"scaleY":12.0,"imageIndex":0,"imageSpeed":0.9,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":410.0,"y":960.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6C30D3B7","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"mxlines","path":"objects/obj_textscreen/obj_textscreen.yy",},"objectId":{"name":"obj_textscreen","path":"objects/obj_textscreen/obj_textscreen.yy",},"value":"1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"txtid","path":"objects/obj_textscreen/obj_textscreen.yy",},"objectId":{"name":"obj_textscreen","path":"objects/obj_textscreen/obj_textscreen.yy",},"value":"4",},

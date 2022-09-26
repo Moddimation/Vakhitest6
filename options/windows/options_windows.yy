@@ -9,7 +9,7 @@
   "option_windows_product_info": "Vakhitest 6",
   "option_windows_copyright_info": "Moddimation",
   "option_windows_description_info": "for testing purposes...  only",
-  "option_windows_display_cursor": false,
+  "option_windows_display_cursor": true,
   "option_windows_icon": "icons/icon.ico",
   "option_windows_save_location": 1,
   "option_windows_splash_screen": "splash/splash.png",
