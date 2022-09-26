@@ -12,11 +12,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 		} else printdone=1 
 	}  
 	else {
-	    if(textpos<=string_length(textorigin)-textposoff){
-			if(string_char_at(textorigin, textpos)==">"){
-				charrand = real(string_char_at(textorigin, 2));
-				textpos+=2;
-			}
+	    if(textpos<=string_length(textorigin)){
 	        if(maxlinepos==-1) maxlinepos=string_length(textorigin)+1; //if -1, detect maxlinepos automaticly
 	        if(lineno>maxlineno) printdone=true; //if max amount of lines reached make printdone true...
 	        if(printdone and keyboard_check_pressed(vk_enter)&&!textstatic){ //if printdone true and enter pressed, clear text and continue writing
@@ -25,7 +21,30 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            linepos=0;
 	            printdone=false;
 	        }
-	        if(string_char_at(textorigin, textpos) == "&" or linepos>maxlinepos){ //make a newline
+			
+			if(string_char_at(textorigin, textpos) == "$"){
+				var txt_char = string_char_at(textorigin, textpos+2);
+				var txt_chars = real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4))
+				if(string_char_at(textorigin, textpos+1)==">"){
+					if(txt_char == "&") linepos=360;
+			        else if(txt_char=="0"){ //wait frames
+			            timercount=timercount+( real(string_char_at(textorigin, textpos+3))*10 +timercount+ real(string_char_at(textorigin, textpos+4)) ) *5;
+			            textpos+=5;
+			        }
+					else if(txt_char=="1"){ //text shaker
+						charrand = txt_chars;
+			            textpos+=5;
+					}
+					else if(txt_char=="2"){ //wait frames repeat
+						txtslow= txt_chars;
+			            textpos+=5;
+					}
+				}
+			}
+			
+			
+			
+	        if(linepos>maxlinepos){ //make a newline
 	            textcurrent+="\n";
 	            lineno++;
 	            textpos++;
@@ -33,13 +52,9 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            timercount+=timeoff*4;
 				textposoff++;
 	        }
-	        if(string_char_at(textorigin, textpos) == "^"){ //used for custom timing
-	            timercount=timercount+( real(string_char_at(textorigin, textpos+1))*10 +timercount+ real(string_char_at(textorigin, textpos+2)) ) *5;
-	            textpos+=3;
-				textposoff+=3;
-	        }
 	        if(timercount==-1){//reset timercount
-	            timercount=timeoff*2;
+	            if(txtslow==0) timercount=timeoff*2;
+				else timercount=txtslow;
 	        } else timercount--;
 	        if(timercount==0 and !printdone) { //assign current letter to textcurrent, print textcurrent in draw event
 				var txchar = string_char_at(textorigin, textpos);

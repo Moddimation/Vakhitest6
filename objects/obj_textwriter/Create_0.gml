@@ -6,4 +6,4 @@ timercount=-1;
 printdone=false;
 txtglcount=0;
 charrand=0;
-textposoff=0;
+txtslow=0;
