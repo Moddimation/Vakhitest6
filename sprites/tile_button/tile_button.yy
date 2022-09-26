@@ -35,6 +35,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cdbd3fee-634f-4fa3-aab1-d51413b642f0",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed7733d2-7646-4d0e-b6c7-857515474934",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f913ce48-bec9-46ea-afab-28454f36f8cd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3ff5701-5eab-4d70-b74a-a9665b0ad3ee",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,7 +47,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 8.0,
+    "length": 9.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -59,6 +60,7 @@
             {"id":"5cfc9c32-1ca1-4979-b587-9156b14631dd","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cdbd3fee-634f-4fa3-aab1-d51413b642f0","path":"sprites/tile_button/tile_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4b17a54b-4ce5-4a8f-8319-099607017eb9","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed7733d2-7646-4d0e-b6c7-857515474934","path":"sprites/tile_button/tile_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"df3c72e4-f098-4d2b-8d87-17ae5aeedaf5","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f913ce48-bec9-46ea-afab-28454f36f8cd","path":"sprites/tile_button/tile_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c2332861-8150-4fe9-81fa-37cbc1388291","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3ff5701-5eab-4d70-b74a-a9665b0ad3ee","path":"sprites/tile_button/tile_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

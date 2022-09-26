@@ -9,17 +9,28 @@ image_yscale = plscale;
 facing=0;
 isdir[1]= 0;
 
-if(global.debug) instance_create_layer(0, 0, "Instances", DebugSwitch);
-isAndroid = os_type==os_android;
-if(isAndroid){
-	andrbutt_enter = instance_create_depth(0, 0, -100, obj_button_enter);
-	andrbutt_back = instance_create_depth(0, 0, -100, obj_button_back);
-	andrbutt_left = instance_create_depth(0, 0, -100, obj_button_left);
-	andrbutt_right = instance_create_depth(0, 0, -100, obj_button_right);
-	andrbutt_up = instance_create_depth(0, 0, -100, obj_button_up);
-	andrbutt_down = instance_create_depth(0, 0, -100, obj_button_down);
-	if(global.debug) andrbutt_dbg = instance_create_depth(0, 0, -100, obj_button_debug);
-	if(global.debug) andrbutt_dbgbound = instance_create_depth(0, 0, -100, obj_button_dbgbound);
+if(global.debug) instance_create_layer(0, 0, "Instances", DebugSwitch);//controlls debug toggles
+
+if(os_type==os_android){
+	instance_create_depth(0, 0, -100, obj_button_enter);
+	instance_create_depth(0, 0, -100, obj_button_back);
+	instance_create_depth(0, 0, -100, obj_button_left);
+	instance_create_depth(0, 0, -100, obj_button_right);
+	instance_create_depth(0, 0, -100, obj_button_up);
+	instance_create_depth(0, 0, -100, obj_button_down);
+	if(global.debug) instance_create_depth(0, 0, -100, obj_button_debug);
+	if(global.debug) instance_create_depth(0, 0, -100, obj_button_dbgbound);
+	if(global.debug) instance_create_depth(0, 0, -100, obj_button_debugmode);
+	
+	//andrbutt_enter = instance_create_depth(0, 0, -100, obj_button_enter);
+	//andrbutt_back = instance_create_depth(0, 0, -100, obj_button_back);
+	//andrbutt_left = instance_create_depth(0, 0, -100, obj_button_left);
+	//andrbutt_right = instance_create_depth(0, 0, -100, obj_button_right);
+	//andrbutt_up = instance_create_depth(0, 0, -100, obj_button_up);
+	//andrbutt_down = instance_create_depth(0, 0, -100, obj_button_down);
+	//if(global.debug) andrbutt_dbg = instance_create_depth(0, 0, -100, obj_button_debug);
+	//if(global.debug) andrbutt_dbgbound = instance_create_depth(0, 0, -100, obj_button_dbgbound);
+	//if(global.debug) andrbutt_dbgmode = instance_create_depth(0, 0, -100, obj_button_debugmode);
 }
 
 function walkup(){

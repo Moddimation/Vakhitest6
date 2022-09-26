@@ -50,6 +50,7 @@
     {"id":{"name":"tile_boundlongL","path":"sprites/tile_boundlongL/tile_boundlongL.yy",},"order":0,},
     {"id":{"name":"obj_button_left","path":"objects/obj_button_left/obj_button_left.yy",},"order":5,},
     {"id":{"name":"snd_txt_test5","path":"sounds/snd_txt_test5/snd_txt_test5.yy",},"order":5,},
+    {"id":{"name":"obj_button_debugmode","path":"objects/obj_button_debugmode/obj_button_debugmode.yy",},"order":8,},
     {"id":{"name":"obj_spawnB","path":"objects/obj_spawnB/obj_spawnB.yy",},"order":1,},
     {"id":{"name":"scr_textwrite","path":"scripts/scr_textwrite/scr_textwrite.yy",},"order":3,},
     {"id":{"name":"obj_button_right","path":"objects/obj_button_right/obj_button_right.yy",},"order":6,},
