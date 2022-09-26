@@ -4,14 +4,17 @@ function texttable(_msgid){
 		// COMMANDS:
 		// $>0xy = wait frame once
 		// $>1xy = shaky text
-		// $>02 = wait frame repeat
+		// $>2xy = wait frame repeat
+		// $>3 = force quit text
 		case 2:
 			global.msg[0] = "* Text System Commands 2.0";
 			global.msg[1] = "  Hello$>010 Dear World";
 			global.msg[2] = "  Hello$>104 Dear World";
 			global.msg[3] = " $>100 Hello$>210 Dear World$>200";
 			global.msg[4] = "  Hello$>104 $>212Dear World";
-			global.msg[5] = "  bye%";
+			global.msg[5] = "  $>200$>112AAHHHH$>3%";
+			global.msg[6] = "  if you see this,";
+			global.msg[7] = "  i fucked up smh%";
 			break;
 		case 3:
 			global.msg[0] = "  DEBUG MENU HUB";

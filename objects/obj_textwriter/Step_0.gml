@@ -24,7 +24,6 @@ if(string_char_at(textorigin, textpos) != "%"){
 			
 			if(string_char_at(textorigin, textpos) == "$"){
 				var txt_char = string_char_at(textorigin, textpos+2);
-				var txt_chars = real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4))
 				if(string_char_at(textorigin, textpos+1)==">"){
 					if(txt_char == "&") linepos=360;
 			        else if(txt_char=="0"){ //wait frames
@@ -32,17 +31,18 @@ if(string_char_at(textorigin, textpos) != "%"){
 			            textpos+=5;
 			        }
 					else if(txt_char=="1"){ //text shaker
-						charrand = txt_chars;
+						charrand = real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4));
 			            textpos+=5;
 					}
 					else if(txt_char=="2"){ //wait frames repeat
-						txtslow= txt_chars;
+						txtslow= real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4));
 			            textpos+=5;
+					}
+					else if(txt_char=="3"){ //force quit
+						instance_destroy();
 					}
 				}
 			}
-			
-			
 			
 	        if(linepos>maxlinepos){ //make a newline
 	            textcurrent+="\n";
