@@ -18,6 +18,8 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A86764C_3","properties":[],"isDnd":false,"objectId":{"name":"player","path":"objects/player/player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3AC9E8B8","properties":[],"isDnd":false,"objectId":{"name":"testwriter","path":"objects/testwriter/testwriter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":1088.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3CA18CC3","properties":[],"isDnd":false,"objectId":{"name":"testwriter","path":"objects/testwriter/testwriter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":256.0,},
       ],"visible":true,"depth":190,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":64,"gridY":64,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24A2FA67_1","properties":[
@@ -87,6 +89,8 @@
     {"name":"inst_255DD119","path":"rooms/room_testbig/room_testbig.yy",},
     {"name":"inst_24D59FDB","path":"rooms/room_testbig/room_testbig.yy",},
     {"name":"inst_188ADD11","path":"rooms/room_testbig/room_testbig.yy",},
+    {"name":"inst_3AC9E8B8","path":"rooms/room_testbig/room_testbig.yy",},
+    {"name":"inst_3CA18CC3","path":"rooms/room_testbig/room_testbig.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

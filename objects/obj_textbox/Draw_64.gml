@@ -1,0 +1,2 @@
+draw_rectangle_colour(sizex, camera_get_view_height(0)-sizex, camera_get_view_width(0)-sizex, camera_get_view_height(0)-sizey, c_black, c_black, c_black, c_black, false);
+draw_rectangle_colour(sizex, camera_get_view_height(0)-sizex, camera_get_view_width(0)-sizex, camera_get_view_height(0)-sizey, c_white, c_white, c_white, c_white, true);

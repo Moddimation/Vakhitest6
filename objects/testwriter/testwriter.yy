@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "testwriter",
   "spriteId": {
-    "name": "npc_test",
-    "path": "sprites/npc_test/npc_test.yy",
+    "name": "anm_npcbeep",
+    "path": "sprites/anm_npcbeep/anm_npcbeep.yy",
   },
   "solid": true,
   "visible": true,
