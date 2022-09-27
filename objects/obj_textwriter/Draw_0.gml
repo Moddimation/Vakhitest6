@@ -6,5 +6,4 @@ for(i=1; i<=string_length(textcurrent); i++){
 }
 if(global.debug){
 	printdbg(string_char_at(textorigin, textpos), 4);
-	printdbg("txtx: "+string(x)+", txty: "+string(y), 5);
 }
