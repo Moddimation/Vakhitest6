@@ -3,7 +3,7 @@ sizey=180;
 player.blockinput=true;
 var textoff=33;
 texttable(msgd);
-mytext = instance_create_depth(sizex+textoff-30,window_get_height()-sizey+textoff, 145, obj_textwriter, {
+mytext = instance_create_depth(sizex+textoff-30,(camera_get_view_height(0)+camera_get_view_y(view_camera[0]))-sizey+textoff, 145, obj_textwriter, {
 	textmessage : global.msg,
 	textstatic : false,
 	maxlineno : 2,
