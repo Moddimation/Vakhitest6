@@ -1,1 +1,1 @@
-if(show_help) draw_sprite_ext(tile_helpdbg, 0, camera_get_view_width(0)/2, camera_get_view_height(0)/2, 3, 3, 0, c_white, 9);
+if(variable_instance_exists(id, "show_help")) if(show_help) draw_sprite_ext(tile_helpdbg, 0, camera_get_view_width(0)/2, camera_get_view_height(0)/2, 3, 3, 0, c_white, 9);

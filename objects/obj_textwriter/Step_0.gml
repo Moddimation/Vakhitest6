@@ -24,9 +24,9 @@ if(string_char_at(textorigin, textpos) != "%"){
 			
 			if(string_char_at(textorigin, textpos) == "$"){
 				var txt_char = string_char_at(textorigin, textpos+2);
+				if(string_char_at(textorigin, textpos+1) == "&") newline=true;
 				if(string_char_at(textorigin, textpos+1)==">"){
-					if(txt_char == "&") linepos=360;
-			        else if(txt_char=="0"){ //wait frames
+			        if(txt_char=="0"){ //wait frames
 			            timercount=timercount+( real(string_char_at(textorigin, textpos+3))*10 +timercount+ real(string_char_at(textorigin, textpos+4)) ) *5;
 			            textpos+=5;
 			        }
@@ -44,13 +44,14 @@ if(string_char_at(textorigin, textpos) != "%"){
 				}
 			}
 			
-	        if(linepos>maxlinepos){ //make a newline
+	        if(linepos>maxlinepos||newline){ //make a newline
 				array_push(textcurrent,{
 						txchar : "\n",
 						txrand : charrand,
 						txcolor : c_white,
 						txsize : 2,
 				});
+				newline=false;
 	            lineno++;
 	            textpos++;
 	            linepos=0;

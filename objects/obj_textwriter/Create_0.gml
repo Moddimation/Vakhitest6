@@ -1,5 +1,5 @@
 if(textstatic) textcurrent="";
-else { textcurrent = [];}
+else textcurrent = [];
 textpos=1;
 lineno=0;
 linepos=0;
@@ -9,3 +9,4 @@ txtglcount=0;
 charrand=0;
 txtslow=0;
 textgui=true;
+newline=false;
