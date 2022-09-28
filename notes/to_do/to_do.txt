@@ -1,9 +1,9 @@
 add textboxes(with buttons and etc)
 add npcs
 test aroud with graphics style
-text: add string-command aka \& \^90 \>7 etc
-text: add string command operators for more stuff(y o u r   g o n n a   h a v e   a   b a d   t i m e)
-add menus
+move debug buttons android to the right
+create background for debug hub and label doors
+change text system textcurrent to a struct(char, x, y, rand, color, size)
 
 
 

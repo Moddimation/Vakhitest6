@@ -16,7 +16,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 	        if(maxlinepos==-1) maxlinepos=string_length(textorigin)+1; //if -1, detect maxlinepos automaticly
 	        if(lineno>maxlineno) printdone=true; //if max amount of lines reached make printdone true...
 	        if(printdone and keyboard_check_pressed(vk_enter)&&!textstatic){ //if printdone true and enter pressed, clear text and continue writing
-	            textcurrent="";
+	            textcurrent = [];
 	            lineno=0;
 	            linepos=0;
 	            printdone=false;
@@ -45,22 +45,34 @@ if(string_char_at(textorigin, textpos) != "%"){
 			}
 			
 	        if(linepos>maxlinepos){ //make a newline
-	            textcurrent+="\n";
+				array_push(textcurrent,{
+						txchar : "\n",
+						txrand : charrand,
+						txcolor : c_white,
+						txsize : 2,
+				});
 	            lineno++;
 	            textpos++;
 	            linepos=0;
 	            timercount+=timeoff*4;
-				textposoff++;
 	        }
 	        if(timercount==-1){//reset timercount
 	            if(txtslow==0) timercount=timeoff*2;
 				else timercount=txtslow;
 	        } else timercount--;
 	        if(timercount==0 and !printdone) { //assign current letter to textcurrent, print textcurrent in draw event
-				var txchar = string_char_at(textorigin, textpos);
-	            textcurrent += txchar;
+				var txtchar = string_char_at(textorigin, textpos);
+				
+	            //textcurrent += txchar; //basically the core...
+				array_push(textcurrent,{
+						txchar : txtchar,
+						txrand : charrand,
+						txcolor : c_white,
+						txsize : 2,
+				});
+				
 	            textpos++;
-				if(ord(txchar)>33) switch(txt_snd){
+				if(ord(txtchar)>33) switch(txt_snd){
 						case 1:
 							audio_play_sound(snd_txt_test0, 1, false);
 							break;
@@ -90,6 +102,16 @@ if(string_char_at(textorigin, textpos) != "%"){
 							break;
 					}
 	        }
-	    } else { textcurrent+="\n"; txtglcount++; textpos=1; lineno++; textposoff=0; }
+	    } else {
+					txtglcount++; 
+					textpos=1;
+					lineno++;
+					array_push(textcurrent,{
+							txchar : "\n",
+							txrand : charrand,
+							txcolor : c_white,
+							txsize : 2,
+					});
+				}
 	}
 } else if(keyboard_check_pressed(vk_enter)) instance_destroy();

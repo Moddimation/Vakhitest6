@@ -1,4 +1,5 @@
-textcurrent="";
+if(timeoff==0||textstatic) textcurrent="";
+else { textcurrent = [];}
 textpos=1;
 lineno=0;
 linepos=0;
