@@ -3,7 +3,7 @@ add npcs
 test aroud with graphics style
 move debug buttons android to the right
 create background for debug hub and label doors
-change text system textcurrent to a struct(char, x, y, rand, color, size)
+text system color and finish array textcurrent
 
 
 

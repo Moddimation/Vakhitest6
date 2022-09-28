@@ -1,24 +1,26 @@
 function texttable(_msgid){
 	switch(_msgid){ 
-		// 1 SECOND  =  ^12
+		// 1 SECOND  =  12 txt frames
 		// COMMANDS:
+		// $&    = newline
 		// $>0xy = wait frame once
-		// $>1xy = shaky text
-		// $>2xy = wait frame repeat
-		// $>3 = force quit text
+		// $>1xy = wait frame repeat
+		// $>2xy = shaky text
+		// $>3   = force quit text
 		case 2:
 			global.msg[0] = "* Text System Commands 2.0";
 			global.msg[1] = "  Hello$>010 Dear World";
-			global.msg[2] = "  Hello$>104 Dear World";
-			global.msg[3] = " $>100 Hello$>210 Dear World$>200";
-			global.msg[4] = "  Hello$>104 $>212Dear World";
-			global.msg[5] = "  $>200$>112AAHHHH$>3%";
-			global.msg[6] = "  if you see this,";
-			global.msg[7] = "  i fucked up smh%";
+			global.msg[2] = "  Hello$>204 Dear World";
+			global.msg[3] = " $>200 Hello$>110 Dear World$>100";
+			global.msg[4] = " $>200 Hello$>105 D e a r   W o r l d $>100";
+			global.msg[5] = "  Hello$>204 $>112Dear World";
+			global.msg[6] = "  $>100$>212AAHHHH$>3%";
+			global.msg[7] = "  if you see this,";
+			global.msg[8] = "  i fucked up smh%";
 			break;
 		case 3:
-			global.msg[0] = "  DEBUG MENU HUB";
-			global.msg[1] = "\n\n\n\n\n\n\n\nPress \'P\' to resume%";
+			global.msg[0] = " DEBUG MENU HUB";
+			global.msg[1] = "\n\n\n\n\n\n\n\n\n\nPress \'P\' to resume%";
 			break;
 		case 4:
 			global.msg[0] = "You just got error'd lol";

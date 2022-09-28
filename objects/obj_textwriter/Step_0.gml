@@ -1,6 +1,6 @@
 if(!printdone) if(is_array(textmessage)) textorigin=textmessage[txtglcount]; else textorigin=textmessage;
 if(string_char_at(textorigin, textpos) != "%"){
-	if(timeoff==0||textstatic) { 
+	if(textstatic) { 
 		var prinaa=textorigin;
 		if(string_char_at(textorigin, string_length(textorigin)) == "%") prinaa = string_delete(textorigin, string_length(textorigin), 1); 
 		if(!printdone) textcurrent += prinaa;
@@ -30,11 +30,11 @@ if(string_char_at(textorigin, textpos) != "%"){
 			            timercount=timercount+( real(string_char_at(textorigin, textpos+3))*10 +timercount+ real(string_char_at(textorigin, textpos+4)) ) *5;
 			            textpos+=5;
 			        }
-					else if(txt_char=="1"){ //text shaker
+					else if(txt_char=="2"){ //text shaker
 						charrand = real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4));
 			            textpos+=5;
 					}
-					else if(txt_char=="2"){ //wait frames repeat
+					else if(txt_char=="1"){ //wait frames repeat
 						txtslow= real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4));
 			            textpos+=5;
 					}
@@ -57,7 +57,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            timercount+=timeoff*4;
 	        }
 	        if(timercount==-1){//reset timercount
-	            if(txtslow==0) timercount=timeoff*2;
+	            if(txtslow==0) timercount=timeoff;
 				else timercount=txtslow;
 	        } else timercount--;
 	        if(timercount==0 and !printdone) { //assign current letter to textcurrent, print textcurrent in draw event
