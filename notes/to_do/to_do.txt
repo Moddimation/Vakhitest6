@@ -3,11 +3,11 @@ add npcs
 test aroud with graphics style
 move debug buttons android to the right
 create background for debug hub and label doors
-text system color and finish array textcurrent
+text system color
 
 
 
 
 
 be determined
-Error Code: room number, debugmode bool, showbounds bool,  spawnid number
+Error Code: roomid, debugmode, showbounds, spawnid

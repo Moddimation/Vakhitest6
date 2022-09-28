@@ -1,17 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if(show_help){ show_help=false; player.blockinput=false; }
+else { show_help=true; player.blockinput=true; }
