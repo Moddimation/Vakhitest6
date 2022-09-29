@@ -7,6 +7,7 @@ timercount=-1;
 printdone=false;
 txtglcount=0;
 charrand=0;
+charrandtime=0;
 txtslow=0;
 textgui=true;
 newline=false;

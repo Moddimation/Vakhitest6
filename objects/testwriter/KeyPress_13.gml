@@ -13,5 +13,8 @@ if(instance_exists(player)){
 				ylen : 16,
 				opt_msgid : 5
 			});
+		case 2:
+			if(!player.blockinput&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbox_bottom+10, player, false, true)!=noone) 
+			print_box(6, 1, 8);
 	}
 }

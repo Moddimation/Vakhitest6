@@ -13,7 +13,7 @@ function texttable(_msgid){
 			global.msg[2] = "  Hello$>204 Dear World";
 			global.msg[3] = " $>200 Hello$>110 Dear World$>100";
 			global.msg[4] = " $>200 Hello$>105 D e a r   W o r l d $>100";
-			global.msg[5] = "  Hello$>204 $>112Dear World";
+			global.msg[5] = "  Hello$>207 $>112D$>108 e a r   W o r l d $>015 ";
 			global.msg[6] = "  $>100$>212AAHHHH$>3%";
 			global.msg[7] = "  if you see this,";
 			global.msg[8] = "  i fucked up smh%";
@@ -68,6 +68,10 @@ function texttable(_msgid){
 			global.msg[38] = "option 9%";
 			global.msg[39] = "option 0%";
 			global.msg[40] = "option 1%";
+			break;
+		case 6:
+			global.msg[0] = "* Test Message$>016";
+			global.msg[1] = "  wassup$>010%";
 			break;
 		default:
 			global.msg[0] = "ERROR%";

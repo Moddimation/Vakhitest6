@@ -7,7 +7,8 @@ if(textgui){
 			draw_text_transformed(x+(((charr*chrwidth)*textsize)/charr)*charr+random(textcurrent[i].txrand), y+(line*string_height("M")*textsize)+random(textcurrent[i].txrand), string(textcurrent[i].txchar), textsize, textsize, image_angle);
 		}
 		if(global.debug){
-			printdbg(string_char_at(textorigin, textpos), 4);
+			printdbg("   "+string_char_at(textorigin, textpos), 30);
+			printdbg("   "+"x: "+string(x)+" y: "+string(y), 31);
 		}
 	} else draw_text_transformed(x, y, textcurrent, textsize, textsize, image_angle);
 }
