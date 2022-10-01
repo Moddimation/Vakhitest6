@@ -4,6 +4,9 @@ test aroud with graphics style
 move debug buttons android to the right
 create background for debug hub and label doors
 text system color
+add music/test
+dont render out of bounds
+hitboxes debug switch(outline)
 
 
 
