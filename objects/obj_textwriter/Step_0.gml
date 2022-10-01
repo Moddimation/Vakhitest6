@@ -13,10 +13,16 @@ if(string_char_at(textorigin, textpos) != "%"){
 	}  
 	else {
 	    if(textpos<=string_length(textorigin)){
+			
+			if(keyboard_check_pressed(vk_shift)){
+				txtskip=true;
+				timercount=0;
+			}
 	        if(maxlinepos==-1) maxlinepos=string_length(textorigin)+1; //if -1, detect maxlinepos automaticly
 	        if(lineno>maxlineno) printdone=true; //if max amount of lines reached make printdone true...
 	        if(printdone and keyboard_check_pressed(vk_enter)&&!textstatic){ //if printdone true and enter pressed, clear text and continue writing
 	            textcurrent = [];
+				txtskip=false;
 	            lineno=0;
 	            linepos=0;
 	            printdone=false;
@@ -27,19 +33,23 @@ if(string_char_at(textorigin, textpos) != "%"){
 				if(string_char_at(textorigin, textpos+1) == "&") newline=true;
 				if(string_char_at(textorigin, textpos+1)==">"){
 			        if(txt_char=="0"){ //wait frames
-			            timercount=timercount+( real(string_char_at(textorigin, textpos+3))*10 +timercount+ real(string_char_at(textorigin, textpos+4)) ) *5;
+			            if(!txtskip) timercount=timercount+( real(string_char_at(textorigin, textpos+3))*10 +timercount+ real(string_char_at(textorigin, textpos+4)) ) *5;
 			            textpos+=5;
 			        }
+					else if(txt_char=="1"){ //wait frames repeat
+						if(!txtskip) txtslow= real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4));
+			            textpos+=5;
+					}
 					else if(txt_char=="2"){ //text shaker
 						charrand = real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4));
 			            textpos+=5;
 					}
-					else if(txt_char=="1"){ //wait frames repeat
-						txtslow= real(string_char_at(textorigin, textpos+3))*10+ real(string_char_at(textorigin, textpos+4));
-			            textpos+=5;
-					}
 					else if(txt_char=="3"){ //force quit
 						instance_destroy();
+					}
+					else if(txt_char=="4"){ //color
+						textcolor = txtcolor(string(string_char_at(textorigin, textpos+3))+string(string_char_at(textorigin, textpos+4)));
+			            textpos+=5;
 					}
 				}
 			}
@@ -48,8 +58,8 @@ if(string_char_at(textorigin, textpos) != "%"){
 				array_push(textcurrent,{
 						txchar : "\n",
 						txrand : charrand,
-						txcolor : c_white,
-						txsize : 2,
+						txcolor : textcolor,
+						txsize : textsize,
 				});
 				newline=false;
 	            lineno++;
@@ -57,10 +67,10 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            linepos=0;
 	            timercount+=timeoff*4;
 	        }
-	        if(timercount==-1){//reset timercount
+	        if(timercount==-1&&!txtskip){//reset timercount
 	            if(txtslow==0) timercount=timeoff;
 				else timercount=txtslow;
-	        } else timercount--;
+	        } else if(!txtskip) timercount--;
 	        if(timercount==0 and !printdone) { //assign current letter to textcurrent, print textcurrent in draw event
 				var txtchar = string_char_at(textorigin, textpos);
 				
@@ -68,8 +78,8 @@ if(string_char_at(textorigin, textpos) != "%"){
 				array_push(textcurrent,{
 						txchar : txtchar,
 						txrand : charrand,
-						txcolor : c_white,
-						txsize : 2,
+						txcolor : textcolor,
+						txsize : textsize,
 				});
 				
 	            textpos++;
@@ -110,8 +120,8 @@ if(string_char_at(textorigin, textpos) != "%"){
 					array_push(textcurrent,{
 							txchar : "\n",
 							txrand : charrand,
-							txcolor : c_white,
-							txsize : 2,
+							txcolor : textcolor,
+							txsize : textsize,
 					});
 				}
 	}

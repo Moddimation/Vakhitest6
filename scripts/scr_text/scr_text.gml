@@ -7,11 +7,12 @@ function texttable(_msgid){
 		// $>1xy = wait frame repeat
 		// $>2xy = shaky text
 		// $>3   = force quit text
+		// $>4ab = color
 		case 2:
 			global.msg[0] = "* Text System Commands 2.0";
 			global.msg[1] = "  Hello$>010 Dear World";
 			global.msg[2] = "  Hello$>204 Dear World";
-			global.msg[3] = " $>200 Hello$>110 Dear World$>100";
+			global.msg[3] = " $>200 Hello$>110 $>4GYDear World$>100 $>4WH";
 			global.msg[4] = " $>200 Hello$>105 D e a r   W o r l d $>100";
 			global.msg[5] = "  Hello$>207 $>112D$>108 e a r   W o r l d $>015 ";
 			global.msg[6] = "  $>100$>212AAHHHH$>3%";
