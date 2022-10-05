@@ -1,6 +1,6 @@
 //draw_rectangle_colour(sizex, window_get_height()-sizex, window_get_width()-sizex, window_get_height()-sizey, c_black, c_black, c_black, c_black, false);
-draw_rectangle_colour(pleft, ptop, pright, pbottom, c_black, c_black, c_black, c_black, false);
-draw_rectangle(pleft, ptop, pright, pbottom, true);
+draw_rectangle_colour(pleft-xoff, ptop-yoff, pright+xoff, pbottom+yoff, c_black, c_black, c_black, c_black, false);
+draw_rectangle(pleft-xoff, ptop-yoff, pright+xoff, pbottom+yoff, true);
 if(!ranit) {
 	opt_num=0;
 	j=1;
@@ -19,4 +19,4 @@ if(!ranit) {
 	j=1;
 	opt_num=0;
 }
-draw_circle_color(pleft+i*(xlen*2.5)-xlen*2, ptop+j*(ylen*3)-ylen*2, 10, c_white, c_white, false);
+draw_circle_color(pleft+i*(xlen*2.5)-xlen*2-15, ptop+j*(ylen*3)-ylen*2+3, 10, c_white, c_white, false);

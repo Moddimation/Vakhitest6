@@ -14,4 +14,42 @@ if(keyboard_check_pressed(vk_enter)) switch(opt_behav){
 				break;
 		}
 		break;
+	case 2:
+		switch(opt_num){
+			case 0:
+				j=3;
+				opt_num=3;
+				audio_play_sound(snd_txt_test1, 1, false);
+				break;
+			case 1:
+				room_goto(menu_test);
+				instance_destroy();
+				audio_play_sound(snd_txt_test1, 1, false);
+				break;
+			case 2:
+				room_goto(menu_test_txtsnd);
+				instance_destroy();
+				audio_play_sound(snd_txt_test1, 1, false);
+				break;
+			case 3:
+				room_goto(menu_test_txtmus);
+				instance_destroy();
+				audio_play_sound(snd_txt_test1, 1, false);
+				break;
+			case 4:
+				audio_play_sound(snd_txt_test1, 1, false);
+				break;
+		}
+		break;
+}
+switch(opt_behav){
+	case 1:
+		break;
+	case 2:
+		if(opt_num==0){
+				j=5;
+				opt_num=4;
+				audio_play_sound(snd_txt_test1, 1, false);
+		}
+		break;
 }

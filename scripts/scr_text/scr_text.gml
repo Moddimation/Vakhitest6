@@ -74,6 +74,13 @@ function texttable(_msgid){
 			global.msg[0] = "* Test Message$>016";
 			global.msg[1] = "  wassup$>010%";
 			break;
+		case 7:
+			global.msg[0] = " - DEBUG MENU -%";
+			global.msg[1] = "GRAPHICAL TEST%";
+			global.msg[2] = "TEXTWRITER TEST%";
+			global.msg[3] = "MUSIC TEST%";
+			global.msg[4] = "IDIOT TEST%";
+			break;
 		default:
 			global.msg[0] = "ERROR%";
 	}
