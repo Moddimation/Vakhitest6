@@ -1,7 +1,7 @@
 walkspeed = 4;
 global.menum=room;
 image_speed = walkspeed/16;
-collspeed=walkspeed*2;
+collspeed=6;
 blockinput=false; blockmoving=false;
 var plscale=3.9;
 image_xscale = plscale;
@@ -54,4 +54,28 @@ function walkright(){
 			isdir[4]=true;
 		}
 		else image_speed=0;
+}
+function walkbackup(){
+		if(!place_free(x, y-collspeed)){ 
+			y+=walkspeed;
+			image_speed=0;
+		}
+}
+function walkbackdown(){
+		if(!place_free(x, y+collspeed)){ 
+			y-=walkspeed;
+			image_speed=0;
+		}
+}
+function walkbackleft(){
+		if(!place_free(x-collspeed, y)){ 
+			x+=walkspeed;
+			image_speed=0;
+		}
+}
+function walkbackright(){
+		if(!place_free(x+collspeed, y)){ 
+			x-=walkspeed;
+			image_speed=0;
+		}
 }

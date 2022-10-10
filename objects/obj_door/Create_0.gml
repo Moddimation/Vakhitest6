@@ -1,5 +1,5 @@
 roomchange=false;
-walkoffset=35;
+walkoffset=30;
 doorentering=false;
 	switch(image_angle){
 	case 90: //UP
@@ -8,8 +8,8 @@ doorentering=false;
 		});
 		if(global.spawnid==doorid){
 			doorentering=true;
-			player.x=x;
-			player.y=y-walkoffset;
+			obj_player.x=x;
+			obj_player.y=y-walkoffset;
 		}
 		break;
 	case -90: //DOWN
@@ -18,8 +18,8 @@ doorentering=false;
 		});
 		if(global.spawnid==doorid){
 			doorentering=true;
-			player.x=x;
-			player.y=y+walkoffset;
+			obj_player.x=x;
+			obj_player.y=y+walkoffset;
 		}
 		break;
 	case 180: //LEFT
@@ -28,8 +28,8 @@ doorentering=false;
 		});
 		if(global.spawnid==doorid){
 			doorentering=true;
-			player.x=x-walkoffset;
-			player.y=y;
+			obj_player.x=x-walkoffset;
+			obj_player.y=y;
 		}
 		break;
 	case -180: //LEFT
@@ -38,8 +38,8 @@ doorentering=false;
 		});
 		if(global.spawnid==doorid){
 			doorentering=true;
-			player.x=x-walkoffset;
-			player.y=y;
+			obj_player.x=x-walkoffset;
+			obj_player.y=y;
 		}
 		break;
 	default: //RIGHT, ETC
@@ -48,7 +48,7 @@ doorentering=false;
 		});
 		if(global.spawnid==doorid){
 			doorentering=true;
-			player.x=x+walkoffset;
-			player.y=y;
+			obj_player.x=x+walkoffset;
+			obj_player.y=y;
 		}
 	}

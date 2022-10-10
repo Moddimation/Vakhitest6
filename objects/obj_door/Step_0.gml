@@ -1,22 +1,23 @@
-if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, player, false, true)&&global.spawnid==-1&&!roomchange) roomchange=true;
+if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)&&global.spawnid==-1&&!roomchange) roomchange=true;
 if(roomchange){
-	player.blockinput=true;
-	player.blockmoving=true;
+	global.lastdoorid=self.doorid;
+	obj_player.blockinput=true;
+	obj_player.blockmoving=true;
 	switch(image_angle){
 		case 0: //RIGHT
-			if(player.x<x+walkoffset) { player.x+=player.walkspeed; player.sprite_index = anm_plwalkright; }
+			if(obj_player.x<x+walkoffset) { obj_player.x+=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkright; }
 			else gotoroom()
 			break;
 		case 180: //LEFT
-			if(player.x>x-walkoffset*2) { player.x-=player.walkspeed; player.sprite_index = anm_plwalkleft; }
+			if(obj_player.x>x-walkoffset*2) { obj_player.x-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkleft; }
 			else gotoroom()
 			break;
 		case -90: //DOWN
-			if(player.y<y+walkoffset) { player.y+=player.walkspeed; player.sprite_index = anm_plwalkdown; }
+			if(obj_player.y<y+walkoffset) { obj_player.y+=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkdown; }
 			else gotoroom()
 			break;
 		case 90: //UP
-			if(player.y>y-walkoffset*2) { player.y-=player.walkspeed; player.sprite_index = anm_plwalkup; }
+			if(obj_player.y>y-walkoffset*2) { obj_player.y-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkup; }
 			else gotoroom()
 			break;
 	}
@@ -25,58 +26,58 @@ function gotoroom()
 {
 	global.spawnid=spwnid;
 	roomchange=false;
-	player.blockinput=false;
-	player.blockmoving=false;
-//	player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
+	obj_player.blockinput=false;
+	obj_player.blockmoving=false;
+//	obj_player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
 	global.menum = room;
 	room_goto(nextroom);
 }
 
 if(global.spawnid==doorid&&doorentering){
-			player.blockinput=true;
-			player.blockmoving=true;
+			obj_player.blockinput=true;
+			obj_player.blockmoving=true;
 	switch(image_angle){
 	case 90: //UP
-		if(player.y<y+walkoffset*2) { player.y+=player.walkspeed; player.sprite_index = anm_plwalkdown; }
+		if(obj_player.y<y+walkoffset*2) { obj_player.y+=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkdown; }
 		else {
-			player.blockinput=false;
-			player.blockmoving=false;
+			obj_player.blockinput=false;
+			obj_player.blockmoving=false;
 			global.spawnid=-1;
 			doorentering=false;
 		}
 		break;
 	case -90: //DOWN
-		if(player.y>y-walkoffset*3) { player.y-=player.walkspeed; player.sprite_index = anm_plwalkup; }
+		if(obj_player.y>y-walkoffset*3) { obj_player.y-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkup; }
 		else {
-			player.blockinput=false;
-			player.blockmoving=false;
+			obj_player.blockinput=false;
+			obj_player.blockmoving=false;
 			global.spawnid=-1;
 			doorentering=false;
 		}
 		break;
 	case 180: //LEFT
-		if(player.x<x+walkoffset*3) { player.x+=player.walkspeed; player.sprite_index = anm_plwalkright; }
+		if(obj_player.x<x+walkoffset*3) { obj_player.x+=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkright; }
 		else {
-			player.blockinput=false;
-			player.blockmoving=false;
+			obj_player.blockinput=false;
+			obj_player.blockmoving=false;
 			global.spawnid=-1;
 			doorentering=false;
 		}
 		break;
 	case -180: //LEFT
-		if(player.x<x+walkoffset*3) { player.x+=player.walkspeed; player.sprite_index = anm_plwalkright; }
+		if(obj_player.x<x+walkoffset*3) { obj_player.x+=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkright; }
 		else {
-			player.blockinput=false;
-			player.blockmoving=false;
+			obj_player.blockinput=false;
+			obj_player.blockmoving=false;
 			global.spawnid=-1;
 			doorentering=false;
 		}
 		break;
 	default: //RIGHT, ETC
-		if(player.x>x-walkoffset*3) { player.x-=player.walkspeed; player.sprite_index = anm_plwalkleft; }
+		if(obj_player.x>x-walkoffset*3) { obj_player.x-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkleft; }
 		else {
-			player.blockinput=false;
-			player.blockmoving=false;
+			obj_player.blockinput=false;
+			obj_player.blockmoving=false;
 			global.spawnid=-1;
 			doorentering=false;
 		}

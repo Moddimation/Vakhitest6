@@ -7,4 +7,4 @@ pheight = ((ylen*ynum)+(ylen*ynum/2))*2;
 ranit=false;
 optxt[0] = "s";
 opt_num=0;
-player.blockinput=true;
+obj_player.blockinput=true;

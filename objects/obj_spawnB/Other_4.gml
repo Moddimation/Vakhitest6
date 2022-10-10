@@ -1,4 +1,4 @@
 if(global.spawnid==1) {
-	player.x=x;
-	player.y=y;
+	obj_player.x=x;
+	obj_player.y=y;
 }

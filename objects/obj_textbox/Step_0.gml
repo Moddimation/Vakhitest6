@@ -1,1 +1,1 @@
-if(!instance_exists(mytext)) { instance_destroy(); player.blockinput=false; }
+if(!instance_exists(mytext)) { instance_destroy(); obj_player.blockinput=false; }

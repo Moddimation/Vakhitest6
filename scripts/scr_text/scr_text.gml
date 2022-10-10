@@ -25,7 +25,7 @@ function texttable(_msgid){
 			break;
 		case 4:
 			global.msg[0] = "You just got error'd lol";
-			global.msg[1] = "Error Code: "+string(global.menum)+string(global.debug)+string(global.show_bound)+string(global.spawnid)+"%";
+			global.msg[1] = "Error Code: "+string(global.menum)+string(global.debug)+string(global.show_bound)+string(global.spawnid)+string(global.lastdoorid)+"%";
 			break;
 		case 5:
 			global.msg[0] = "option 1%";
