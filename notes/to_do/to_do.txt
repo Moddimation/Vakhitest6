@@ -1,12 +1,12 @@
 add textboxes(with buttons and etc)
 add npcs
 test aroud with graphics style
-move debug buttons android to the right
-create background for debug hub and label doors
-text system color
-add music/test
-dont render out of bounds
+//dont render out of bounds
 hitboxes debug switch(outline)
+
+
+
+get some frking game idea
 
 
 

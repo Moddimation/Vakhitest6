@@ -79,6 +79,7 @@
     {"id":{"name":"obj_button_enter","path":"objects/obj_button_enter/obj_button_enter.yy",},"order":4,},
     {"id":{"name":"obj_textwriter","path":"objects/obj_textwriter/obj_textwriter.yy",},"order":0,},
     {"id":{"name":"obj_dbg_testmus","path":"objects/obj_dbg_testmus/obj_dbg_testmus.yy",},"order":4,},
+    {"id":{"name":"mus_test1","path":"sounds/mus_test1/mus_test1.yy",},"order":10,},
     {"id":{"name":"tile_door","path":"sprites/tile_door/tile_door.yy",},"order":3,},
     {"id":{"name":"font_default","path":"fonts/font_default/font_default.yy",},"order":0,},
     {"id":{"name":"tile_helpdbg","path":"sprites/tile_helpdbg/tile_helpdbg.yy",},"order":3,},

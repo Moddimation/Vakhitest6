@@ -1,5 +1,5 @@
 roomchange=false;
-walkoffset=30;
+walkoffset=32;
 doorentering=false;
 	switch(image_angle){
 	case 90: //UP
