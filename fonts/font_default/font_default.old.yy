@@ -2,7 +2,7 @@
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
   "name": "font_default",
-  "hinting": 0,
+  "hinting": 1,
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
@@ -128,7 +128,7 @@
     {"lower":32,"upper":127,},
     {"lower":9647,"upper":9647,},
   ],
-  "regenerateBitmap": false,
+  "regenerateBitmap": true,
   "canGenerateBitmap": true,
   "maintainGms1Font": false,
   "parent": {

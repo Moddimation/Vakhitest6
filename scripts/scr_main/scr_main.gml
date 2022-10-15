@@ -9,4 +9,5 @@ global.spawnid=-1; //spawn point id, set by door object if used
 global.lastdoorid=0;
 global.msg = ["%"];
 global.mus = audio_play_sound(0, 0, false);
+global.player_blockinput=false;
 draw_set_font(font_default);

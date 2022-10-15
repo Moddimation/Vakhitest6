@@ -51,8 +51,13 @@ if(string_char_at(textorigin, textpos) != "%"){
 						textcolor = txtcolor(string(string_char_at(textorigin, textpos+3))+string(string_char_at(textorigin, textpos+4)));
 			            textpos+=5;
 					}
+					else if(txt_char=="5"){ //color
+						textfont = real(string_char_at(textorigin, textpos+3))
+			            textpos+=4;
+					}
 				}
 			}
+			if(string_char_at(textorigin, textpos) == "\n") newline=true;
 			
 	        if(linepos>maxlinepos||newline){ //make a newline
 				array_push(textcurrent,{
@@ -60,6 +65,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 						txrand : charrand,
 						txcolor : textcolor,
 						txsize : textsize,
+						txfont : textfont,
 				});
 				newline=false;
 	            lineno++;
@@ -80,6 +86,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 						txrand : charrand,
 						txcolor : textcolor,
 						txsize : textsize,
+						txfont : textfont,
 				});
 				
 	            textpos++;
@@ -122,6 +129,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 							txrand : charrand,
 							txcolor : textcolor,
 							txsize : textsize,
+							txfont : textfont,
 					});
 				}
 	}

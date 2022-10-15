@@ -38,41 +38,10 @@ function texttable(_msgid){
 			global.msg[7] = "option 8%";
 			global.msg[8] = "option 9%";
 			global.msg[9] = "option 0%";
-			global.msg[10] = "option 1%";
-			global.msg[11] = "option 2%";
-			global.msg[12] = "option 3%";
-			global.msg[13] = "option 4%";
-			global.msg[14] = "option 5%";
-			global.msg[15] = "option 6%";
-			global.msg[16] = "option 7%";
-			global.msg[17] = "option 8%";
-			global.msg[18] = "option 9%";
-			global.msg[19] = "option 0%";
-			global.msg[20] = "option 1%";
-			global.msg[21] = "option 2%";
-			global.msg[22] = "option 3%";
-			global.msg[23] = "option 4%";
-			global.msg[24] = "option 5%";
-			global.msg[25] = "option 6%";
-			global.msg[26] = "option 7%";
-			global.msg[27] = "option 8%";
-			global.msg[28] = "option 9%";
-			global.msg[29] = "option 0%";
-			global.msg[30] = "option 1%";
-			global.msg[31] = "option 2%";
-			global.msg[32] = "option 3%";
-			global.msg[33] = "option 4%";
-			global.msg[34] = "option 5%";
-			global.msg[35] = "option 6%";
-			global.msg[36] = "option 7%";
-			global.msg[37] = "option 8%";
-			global.msg[38] = "option 9%";
-			global.msg[39] = "option 0%";
-			global.msg[40] = "option 1%";
 			break;
 		case 6:
-			global.msg[0] = "* Test Message$>016";
-			global.msg[1] = "  wassup$>010%";
+			global.msg[0] = "* Test Message";
+			global.msg[1] = "  being tested%";
 			break;
 		case 7:
 			global.msg[0] = " - DEBUG MENU -%";
@@ -80,6 +49,18 @@ function texttable(_msgid){
 			global.msg[2] = "TEXTWRITER TEST%";
 			global.msg[3] = "MUSIC TEST%";
 			global.msg[4] = "IDIOT TEST%";
+			break;
+		case 8:
+			global.msg[0] = "    - TENSURA FANGAME -\n$>001 Just for fun.$>006.$>006.$>006\n and because i have no idea.$>002";
+			global.msg[1] = "$>4GY $>51Confirmed.$>006\n Heat Resistance\n acquisition successful.";
+			global.msg[2] = "$>50$>4WH * How the hell\n   could i get\n   stabbed and die?!";
+			global.msg[3] = "$>4GY $>51Confirmed.$>006\n Stab Resistance\n acquisition successful.";
+			global.msg[4] = "$>4GY $>51Continuing...$>006\n Physical Attack Resistance\n acquisition successful.";
+			global.msg[5] = "$>50$>4WH * It hurts...$>004\n   So much...$>002\n";
+			global.msg[6] = "$>4GY $>51Confirmed.$>006\n Pain Nullification\n acquired.";
+			global.msg[7] = "$>4GY $>51Creating a body\n that does not\n need blood.$>003.$>003.$>002";
+			global.msg[8] = "$>4GY $>51Successful.$>003\n\n";
+			global.msg[9] = "%";
 			break;
 		default:
 			global.msg[0] = "ERROR%";

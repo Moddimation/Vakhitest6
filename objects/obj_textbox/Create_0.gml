@@ -1,7 +1,7 @@
 sizex=20;
 show_debug_message("2")
 sizey=180;
-obj_player.blockinput=true;
+global.player_blockinput=true;
 var textoff=33;
 texttable(msgd);
 mytext = instance_create_depth(sizex+textoff-30,camera_get_view_height(0)-sizey+textoff, 145, obj_textwriter, {
