@@ -1,5 +1,4 @@
 //MOVEMENT
-blockinput = global.player_blockinput;
 image_speed = walkspeed/16;
 if(!blockinput){
 	if(keyboard_check(vk_up)){

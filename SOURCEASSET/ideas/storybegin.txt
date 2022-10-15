@@ -28,6 +28,8 @@
  Continuing, Sage will transform into the unique skill Great Sage. . .
  Successful.
 
+#DONE
+
 
 Transferring to another World...
 (line moving from left to right, some guy)

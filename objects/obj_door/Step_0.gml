@@ -1,4 +1,9 @@
-if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)&&global.spawnid==-1&&!roomchange) roomchange=true;
+if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)&&global.spawnid==-1&&!roomchange) { roomchange=true; 
+	fadethis = instance_create_depth(0, 0, -200, obj_fade, {
+		fade_type : 2,
+		fade_colid : 1,
+		fade_speed : 0.04
+	})}
 if(roomchange){
 	global.lastdoorid=self.doorid;
 	obj_player.blockinput=true;
@@ -34,8 +39,8 @@ function gotoroom()
 }
 
 if(global.spawnid==doorid&&doorentering){
-			obj_player.blockinput=true;
-			obj_player.blockmoving=true;
+	obj_player.blockinput=true;
+	obj_player.blockmoving=true;
 	switch(image_angle){
 	case 90: //UP
 		if(obj_player.y<y+walkoffset*2) { obj_player.y+=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkdown; }
