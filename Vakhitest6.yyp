@@ -27,6 +27,7 @@
     {"id":{"name":"obj_spawnD","path":"objects/obj_spawnD/obj_spawnD.yy",},"order":3,},
     {"id":{"name":"obj_ovl_listmenu","path":"objects/obj_ovl_listmenu/obj_ovl_listmenu.yy",},"order":3,},
     {"id":{"name":"bg_testbig","path":"sprites/bg_testbig/bg_testbig.yy",},"order":1,},
+    {"id":{"name":"bg_temporary","path":"sprites/bg_temporary/bg_temporary.yy",},"order":4,},
     {"id":{"name":"obj_dbg_testanm","path":"objects/obj_dbg_testanm/obj_dbg_testanm.yy",},"order":1,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":3,},
     {"id":{"name":"snd_txt_test2","path":"sounds/snd_txt_test2/snd_txt_test2.yy",},"order":2,},

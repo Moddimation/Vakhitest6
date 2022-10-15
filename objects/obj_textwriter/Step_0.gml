@@ -51,8 +51,12 @@ if(string_char_at(textorigin, textpos) != "%"){
 						textcolor = txtcolor(string(string_char_at(textorigin, textpos+3))+string(string_char_at(textorigin, textpos+4)));
 			            textpos+=5;
 					}
-					else if(txt_char=="5"){ //color
+					else if(txt_char=="5"){ //font
 						textfont = real(string_char_at(textorigin, textpos+3))
+			            textpos+=4;
+					}
+					else if(txt_char=="6"){ //font
+						txt_snd = real(string_char_at(textorigin, textpos+3))
 			            textpos+=4;
 					}
 				}
