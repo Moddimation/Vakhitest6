@@ -65,7 +65,7 @@ function texttable(_msgid){
 			global.msg[10] = "$>4GY $>51Combining Heat and Cold Resist.$>001\n into acquisition of a new skill,\n Thermal Fluctuation Resistance.$>003";
 			global.msg[11] = "$>4GY $>51Successful.$>003\n\n";
 			global.msg[12] = "$>4GY $>51Not enough info collected.$>010\n\n\n As an alternative measure,$>003$>008\n";
-			global.msg[11] = "$>4GY $>51Electric Current Resistance acquired.$>02\n Attached is Paralysis Resistance.$>006\n Aquisition successful.$>006";
+			global.msg[13] = "$>4GY $>51Electric Current Resistance acquired.$>02\n Attached is Paralysis Resistance.$>006\n Aquisition successful.$>006";
 			global.msg[14] = "%";
 			break;
 		default:
