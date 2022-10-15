@@ -14,7 +14,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 	else {
 	    if(textpos<=string_length(textorigin)){
 			
-			if(keyboard_check_pressed(vk_shift)){
+			if(keyboard_check(vk_shift)){
 				txtskip=true;
 				timercount=0;
 			}
@@ -71,7 +71,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            lineno++;
 	            textpos++;
 	            linepos=0;
-	            timercount+=timeoff*4;
+	            if(!txtskip) timercount+=timeoff*4;
 	        }
 	        if(timercount==-1&&!txtskip){//reset timercount
 	            if(txtslow==0) timercount=timeoff;

@@ -51,7 +51,7 @@ function texttable(_msgid){
 			global.msg[4] = "IDIOT TEST%";
 			break;
 		case 8:
-			global.msg[0] = "    - TENSURA FANGAME -\n$>001 Just for fun.$>006.$>006.$>006\n and because i have no idea.$>002";
+			global.msg[0] = "II ii iI ti it \n IT TI tl lt\n ";
 			global.msg[1] = "$>4GY $>51Confirmed.$>006\n Heat Resistance\n acquisition successful.";
 			global.msg[2] = "$>50$>4WH * How the hell\n   could i get\n   stabbed and die?!";
 			global.msg[3] = "$>4GY $>51Confirmed.$>006\n Stab Resistance\n acquisition successful.";
