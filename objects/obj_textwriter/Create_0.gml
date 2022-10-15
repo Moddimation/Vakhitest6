@@ -23,6 +23,9 @@ function txtcolor(_tx_color){
 		case string("GY"):
 			return c_gray;
 			break;
+		case string("YW"):
+			return c_yellow;
+			break;
 		default:
 			return c_gray;
 			break;
