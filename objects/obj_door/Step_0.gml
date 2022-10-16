@@ -4,7 +4,7 @@ if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player,
 		fade_colid : 1,
 		fade_speed : 0.04
 	})}
-if(roomchange){
+if(roomchange&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbox_bottom+10, obj_player, false, true)){
 	global.lastdoorid=self.doorid;
 	obj_player.blockinput=true;
 	obj_player.blockmoving=true;
@@ -14,7 +14,7 @@ if(roomchange){
 			else gotoroom()
 			break;
 		case 180: //LEFT
-			if(obj_player.x>x-walkoffset*2) { obj_player.x-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkleft; }
+			if(obj_player.x>x-walkoffset) { obj_player.x-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkleft; }
 			else gotoroom()
 			break;
 		case -90: //DOWN
@@ -22,13 +22,18 @@ if(roomchange){
 			else gotoroom()
 			break;
 		case 90: //UP
-			if(obj_player.y>y-walkoffset*2) { obj_player.y-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkup; }
+			if(obj_player.y>y-walkoffset) { obj_player.y-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkup; }
+			else gotoroom()
+			break;
+		case -180: //LEFT
+			if(obj_player.x>x-walkoffset) { obj_player.x-=obj_player.walkspeed; obj_player.sprite_index = anm_plwalkleft; }
 			else gotoroom()
 			break;
 	}
 }
 function gotoroom()
 {
+	show_debug_message("Heheheh")
 	global.spawnid=spwnid;
 	roomchange=false;
 	obj_player.blockinput=false;

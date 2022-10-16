@@ -8,7 +8,6 @@ printdone=false;
 txtglcount=0;
 charrand=0;
 txtslow=0;
-textgui=true;
 newline=false;
 textcolor=c_white;
 txtskip=false;
@@ -25,6 +24,9 @@ function txtcolor(_tx_color){
 			break;
 		case string("YW"):
 			return c_yellow;
+			break;
+		case string("GN"):
+			return #148f28;
 			break;
 		default:
 			return c_gray;

@@ -12,4 +12,3 @@ switch(fade_type){
 		if(fade_kill && fade_num>1.00) fade_type=0;
 		break;
 }
-show_debug_message(fade_num)
