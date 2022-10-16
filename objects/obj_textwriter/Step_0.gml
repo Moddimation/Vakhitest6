@@ -137,4 +137,15 @@ if(string_char_at(textorigin, textpos) != "%"){
 					});
 				}
 	}
-} else if(keyboard_check_pressed(vk_enter)&&msg_end_bhv==0) instance_destroy();
+} else switch(msg_end_bhv){
+	case 0:
+		if(keyboard_check_pressed(vk_enter)) instance_destroy();
+	case 2:
+		if(!textendexecuted) fadeout = instance_create_depth(0, 0, -200, obj_fade, {
+			fade_type : 2,
+			fade_colid : 1,
+			fade_speed : 0.03
+		})
+		textendexecuted=true;
+		if(fadeout.fade_num>1.00) instance_destroy();
+}

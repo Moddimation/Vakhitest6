@@ -13,7 +13,7 @@ function print_text(_textid, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound
 		msg_end_bhv : _msgendbhv,
 	});
 }
-function print_txt(_texttxt, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _textgui=true){
+function print_txt(_texttxt, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _textgui=true, _msgendbhv=1){
 	mesg[0] = _texttxt+"%";
 	return instance_create_depth(_x, _y, 150, obj_textwriter, {
 		textmessage : mesg,
@@ -24,7 +24,7 @@ function print_txt(_texttxt, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound
 		textsize : _textsize,
 		txt_snd : _txtsound,
 		textgui : _textgui,
-		msg_end_bhv : 1,
+		msg_end_bhv : _msgendbhv,
 	});
 }
 function print_opt(_textid, _x, _y,  _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _optnum=0){

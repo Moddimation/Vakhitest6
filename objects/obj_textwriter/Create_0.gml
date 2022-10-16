@@ -12,6 +12,7 @@ newline=false;
 textcolor=c_white;
 txtskip=false;
 textfont=font_default;
+textendexecuted=false;
 
 function txtcolor(_tx_color){
 	show_debug_message(string(_tx_color))

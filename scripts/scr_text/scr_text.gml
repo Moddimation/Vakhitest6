@@ -76,6 +76,18 @@ function texttable(_msgid){
 			global.msg[22] = "$>4GY $>51Successful.$>003\n\n";
 			global.msg[23] = "%";
 			break;
+		case 9:
+			global.msg[0] = " Somewhere, far away\n from this planet$>035 %";
+			global.msg[1] = " a person called XY\n enjoyed living his\n everyday life.$>035 %";
+			global.msg[2] = " Until$>002.$>003.$>003.$>028 %";
+			global.msg[3] = " a stranger was\n approaching rapidly\n from behind.$>035 %";
+			global.msg[4] = " Holding a knife,\n he fatally injured\n the person.$>035 %";
+			global.msg[5] = " He painfully collapsed,\n thinking about his life.$>035 %";
+			global.msg[6] = " Suddenly, a voice\n he never heard before,\n began speaking\n inside his head.$>035 %";
+			global.msg[7] = " he somehow started acquiring\n magical skills,\n depending on his suffering.$>035 %";
+			global.msg[8] = " But when he actually died...$>040 %";
+			global.msg[9] = " $>050 %";
+			break;
 		default:
 			global.msg[0] = "ERROR%";
 	}
