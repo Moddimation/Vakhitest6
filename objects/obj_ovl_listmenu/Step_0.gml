@@ -37,6 +37,8 @@ if(keyboard_check_pressed(vk_enter)) switch(opt_behav){
 				audio_play_sound(snd_txt_test1, 1, false);
 				break;
 			case 4:
+				room_goto(room_debughub);
+				instance_destroy();
 				audio_play_sound(snd_txt_test1, 1, false);
 				break;
 		}

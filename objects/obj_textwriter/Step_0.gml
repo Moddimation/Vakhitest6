@@ -13,7 +13,6 @@ if(string_char_at(textorigin, textpos) != "%"){
 	}  
 	else {
 	    if(textpos<=string_length(textorigin)){
-			
 			if(keyboard_check(vk_shift)&&msg_end_bhv==0){
 				txtskip=true;
 				timercount=0;
@@ -27,7 +26,6 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            linepos=0;
 	            printdone=false;
 	        }
-			
 			if(string_char_at(textorigin, textpos) == "$"){
 				var txt_char = string_char_at(textorigin, textpos+2);
 				if(string_char_at(textorigin, textpos+1) == "&") newline=true;
@@ -83,7 +81,6 @@ if(string_char_at(textorigin, textpos) != "%"){
 	        } else if(!txtskip) timercount--;
 	        if(timercount==0 and !printdone) { //assign current letter to textcurrent, print textcurrent in draw event
 				var txtchar = string_char_at(textorigin, textpos);
-				
 	            //textcurrent += txchar; //basically the core...
 				array_push(textcurrent,{
 						txchar : txtchar,
@@ -92,7 +89,6 @@ if(string_char_at(textorigin, textpos) != "%"){
 						txsize : textsize,
 						txfont : textfont,
 				});
-				
 	            textpos++;
 				if(ord(txtchar)>33) switch(txt_snd){
 						case 1:
@@ -140,6 +136,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 } else switch(msg_end_bhv){
 	case 0:
 		if(keyboard_check_pressed(vk_enter)) instance_destroy();
+		break;
 	case 2:
 		if(!textendexecuted) fadeout = instance_create_depth(0, 0, -200, obj_fade, {
 			fade_type : 2,
@@ -148,4 +145,5 @@ if(string_char_at(textorigin, textpos) != "%"){
 		})
 		textendexecuted=true;
 		if(fadeout.fade_num>1.00) instance_destroy();
+		break;
 }

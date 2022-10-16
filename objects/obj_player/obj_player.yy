@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_player",
   "spriteId": {
-    "name": "anm_plwalkdown",
-    "path": "sprites/anm_plwalkdown/anm_plwalkdown.yy",
+    "name": "anm_rumuwalkdown",
+    "path": "sprites/anm_rumuwalkdown/anm_rumuwalkdown.yy",
   },
   "solid": true,
   "visible": true,

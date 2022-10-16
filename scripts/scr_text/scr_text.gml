@@ -48,36 +48,16 @@ function texttable(_msgid){
 			global.msg[1] = "GRAPHICAL TEST%";
 			global.msg[2] = "TEXTWRITER TEST%";
 			global.msg[3] = "MUSIC TEST%";
-			global.msg[4] = "IDIOT TEST%";
+			global.msg[4] = "DEBUG HUB%";
 			break;
 		case 8:
-			global.msg[0] = "$>60 Somewhere, far away,$>002\n in a parallel universe$>002. $>005. $>005.$>009\n ";
-			global.msg[1] = "$>66$>4GY $>51 -Confirmed.$>006\n $>4YWHeat Resistance$>4GY\n acquisition successful.$>010 ";
-			global.msg[2] = "$>68$>50$>4WH * How the hell could i get\n   stabbed and pass away?!\n$>002 ";
-			global.msg[3] = "$>66$>4GY $>51Confirmed.$>006\n $>4YWStab Resistance$>4GY\n acquisition successful.$>002 ";
-			global.msg[4] = "$>66$>4GY $>51Continuing...$>006\n $>4YWPhysical Attack Resistance$>4GY\n acquisition successful.$>010 ";
-			global.msg[5] = "$>68$>50$>4WH * It hurts...$>004\n   so much...$>002\n ";
-			global.msg[6] = "$>66$>4GY $>51Confirmed.$>006\n $>4YWPain Nullification$>4GY\n acquired.$>002 ";
-			global.msg[7] = "$>4GY $>51Creating a body\n that does\n $>4YWnot need blood$>4GY$>003.$>003.$>003.$>004 ";
-			global.msg[8] = "$>4GY $>51Successful.$>003\n\n";
-			global.msg[9] = "$>68$>50$>4WH * $>104So...$>008\n   cold...\n $>100$>002 ";
-			global.msg[10] = "$>66$>4GY $>51$>4YWCold Resistance$>4GY\n acquisition successful.$>004\n\n";
-			global.msg[11] = "$>4GY $>51Combining Heat and Cold Resist.$>001\n into acquisition of a new skill,\n $>4YWThermal Fluctuation Resistance$>4GY.$>003 ";
-			global.msg[12] = "$>4GY $>51Successful.$>003\n\n";
-			global.msg[13] = "$>4GY $>51Not enough info collected.$>010\n\n\n As an alternative measure,$>010 ";
-			global.msg[14] = "$>4GY $>51$>4YWElectric Current Resistance$>4GY\n acquired.$>002\n Attached is \n$>4YW Paralysis Resistance$>4GY$>006\n acquisition successful.$>007 ";
-			global.msg[15] = "$>68$>50$>4WH * I never thought i would\n   pass away like that...$>003\n ";
-			global.msg[16] = "$>50$>4WH * In my next life i will screw\n   every attacker i see!$>002\n ";
-			global.msg[17] = "$>66$>4GY $>51$>4YWUnique skill: Predator$>4GY\n acquisition successful.$>003\n";
-			global.msg[18] = "$>68$>50$>4WH * Given how close i was\n   to 40 years, \n   i would've been a sage,$>003 ";
-			global.msg[19] = "$>50$>4WH   I could've even made it\n   to the rank of a\n   great sage.$>002 ";
-			global.msg[20] = "$>66$>4GY $>51$>4YWExtra skill: Sage$>4GY\n acquisition successful.$>003\n";
-			global.msg[21] = "$>4GY $>51Continuing, Sage will transform\n into the\n $>4YWUnique Skill: Great Sage$>4GY.$>003";
-			global.msg[22] = "$>4GY $>51Successful.$>003\n\n";
-			global.msg[23] = "%";
+			global.msg[0] = "$>68$>4GY May your adventure begin...\n\n ";
+			global.msg[1] = "$>67$>50$>4WH * I dont hurt anywhere.$>008\n * I'm not cold$>008\n * My eyes...$>002 won't open$>001?$>008 ";
+			global.msg[2] = " * I can't see anything!$>006\n * My hands...$>004 my feet...$>005\n   i cant feel them.$>008 ";
+			global.msg[3] = " * my body...$>006\n * Can i press the arrow keys\n   to move around?$>004\n   ...\n$>003   wait, you have the keyboard.\n$>002   (press the arrow keys) %";
 			break;
 		case 9:
-			global.msg[0] = " Somewhere, far away\n from this planet$>035 %";
+			global.msg[0] = " $>68Somewhere, far away\n from this planet$>035 %";
 			global.msg[1] = " a person called XY\n enjoyed living his\n everyday life.$>035 %";
 			global.msg[2] = " Until$>002.$>003.$>003.$>028 %";
 			global.msg[3] = " a stranger was\n approaching rapidly\n from behind.$>035 %";
@@ -87,6 +67,9 @@ function texttable(_msgid){
 			global.msg[7] = " he somehow started acquiring\n magical skills,\n depending on his suffering.$>035 %";
 			global.msg[8] = " But when he actually died...$>040 %";
 			global.msg[9] = " $>050 %";
+			break;
+		case 10:
+			global.msg[0] = "$>67$>50 $>4WH * I can move!$>002\n   So i have sensation.$>002 %";
 			break;
 		default:
 			global.msg[0] = "ERROR%";

@@ -1,5 +1,5 @@
 //MOVEMENT
-image_speed = walkspeed/16;
+image_speed = walkspeed/7;
 if(!blockinput){
 	if(keyboard_check(vk_up)){
 		walkup();
@@ -23,16 +23,16 @@ if(!blockinput){
 	}
 	switch(facing){
 		case 1:
-			sprite_index = anm_plwalkup;
+			sprite_index = anm_rumuwalkup;
 			break;
 		case 2:
-			sprite_index = anm_plwalkdown;
+			sprite_index = anm_rumuwalkdown;
 			break;
 		case 3:
-			sprite_index = anm_plwalkleft;
+			sprite_index = anm_rumuwalkleft;
 			break;
 		case 4:
-			sprite_index = anm_plwalkright;
+			sprite_index = anm_rumuwalkright;
 			break;
 	}
 			walkbackup();
