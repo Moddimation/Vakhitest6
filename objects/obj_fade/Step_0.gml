@@ -9,6 +9,6 @@ switch(fade_type){
 		break;
 	case 2:
 		fade_num+=fade_speed;
-		if(fade_kill && fade_num>1.00) fade_type=0;
+		if(fade_num>1.00) fade_type=0;
 		break;
 }

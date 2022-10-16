@@ -1,4 +1,4 @@
-function print_text(_textid, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _textgui=true){
+function print_text(_textid, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _textgui=true, _msgendbhv=1){
 	texttable(_textid);
 	return instance_create_depth(_x, _y, 150, obj_textwriter, {
 		textmessage : global.msg,
@@ -10,6 +10,7 @@ function print_text(_textid, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound
 		txt_snd : _txtsound,
 		msgide : _textid,
 		textgui : _textgui,
+		msg_end_bhv : _msgendbhv,
 	});
 }
 function print_txt(_texttxt, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _textgui=true){
@@ -23,6 +24,7 @@ function print_txt(_texttxt, _x, _y, _maxcharno, _maxlines, _chartime, _txtsound
 		textsize : _textsize,
 		txt_snd : _txtsound,
 		textgui : _textgui,
+		msg_end_bhv : 1,
 	});
 }
 function print_opt(_textid, _x, _y,  _maxlines, _chartime, _txtsound=0, _textsize=1, _textstatic=true, _optnum=0){

@@ -14,13 +14,13 @@ if(string_char_at(textorigin, textpos) != "%"){
 	else {
 	    if(textpos<=string_length(textorigin)){
 			
-			if(keyboard_check(vk_shift)){
+			if(keyboard_check(vk_shift)&&msg_end_bhv==0){
 				txtskip=true;
 				timercount=0;
 			}
 	        if(maxlinepos==-1) maxlinepos=string_length(textorigin)+1; //if -1, detect maxlinepos automaticly
 	        if(lineno>maxlineno) printdone=true; //if max amount of lines reached make printdone true...
-	        if(printdone and keyboard_check_pressed(vk_enter)&&!textstatic){ //if printdone true and enter pressed, clear text and continue writing
+	        if(printdone and keyboard_check_pressed(vk_enter)&&!textstatic&&msg_end_bhv==0){ //if printdone true and enter pressed, clear text and continue writing
 	            textcurrent = [];
 				txtskip=false;
 	            lineno=0;
@@ -137,4 +137,4 @@ if(string_char_at(textorigin, textpos) != "%"){
 					});
 				}
 	}
-} else if(keyboard_check_pressed(vk_enter)) instance_destroy();
+} else if(keyboard_check_pressed(vk_enter)&&msg_end_bhv==0) instance_destroy();
