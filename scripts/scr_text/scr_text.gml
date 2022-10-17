@@ -51,7 +51,7 @@ function texttable(_msgid){
 			global.msg[4] = "DEBUG HUB%";
 			break;
 		case 8:
-			global.msg[0] = "$>68$>4GY May your adventure begin...\n\n ";
+			global.msg[0] = "$>68 Hello there,\n this game is very basic at the\n moment, and very unfinished.....................\n$>4GY  May your adventure begin... \n\n";
 			global.msg[1] = "$>67$>50$>4WH * I dont hurt anywhere.$>008\n * I'm not cold$>008\n * My eyes...$>002 won't open$>001?$>008 ";
 			global.msg[2] = " * I can't see anything!$>006\n * My hands...$>004 my feet...$>005\n   i cant feel them.$>008 ";
 			global.msg[3] = " * my body...$>006\n * Can i press the arrow keys\n   to move around?$>004\n   ...\n$>003   wait, you have the keyboard.\n$>002   (press the arrow keys) %";

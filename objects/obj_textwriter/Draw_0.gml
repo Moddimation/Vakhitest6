@@ -25,5 +25,6 @@ if(!textgui){
 			printdbg("   "+string_char_at(textorigin, textpos), 30);
 			printdbg("   "+"x: "+string(x)+" y: "+string(y), 31);
 		}
+		draw_set_font(font_default);
 	} else draw_text_transformed(x, y, textcurrent, textsize, textsize, image_angle);
 }

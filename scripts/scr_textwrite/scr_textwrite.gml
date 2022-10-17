@@ -39,6 +39,13 @@ function print_opt(_textid, _x, _y,  _maxlines, _chartime, _txtsound=0, _textsiz
 		txt_snd : _txtsound,
 	});
 }
+function print_optinv(_texttxt, _x, _y, _textsize=1){
+	return instance_create_depth(_x, _y, 90, obj_textwriter, {
+		textmessage : _texttxt+"%",
+		textstatic : true,
+		textsize : _textsize,
+	});
+}
 function print_box(_msgid, _chartime, _txtsound=0){
 	return instance_create_depth(0, 0, 150, obj_textbox, {
 		timechar : _chartime,

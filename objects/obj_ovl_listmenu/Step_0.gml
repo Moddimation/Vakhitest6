@@ -1,7 +1,7 @@
-if(keyboard_check_pressed(vk_left)&&i>1) { i--; opt_num--; }
-if(keyboard_check_pressed(vk_right)&&i<xnum) { i++; opt_num++; }
-if(keyboard_check_pressed(vk_up)&&j>1) { j--; opt_num-=xnum; }
-if(keyboard_check_pressed(vk_down)&&j<ynum) { j++; opt_num+=xnum; }
+if(keyboard_check_pressed(vk_left)&&j>1) { j--; opt_num--; }
+if(keyboard_check_pressed(vk_right)&&j<xnum) { j++; opt_num++; }
+if(keyboard_check_pressed(vk_up)&&i>1) { i--; opt_num-=ynum; }
+if(keyboard_check_pressed(vk_down)&&i<ynum) { i++; opt_num+=ynum; }
 if(keyboard_check_pressed(vk_shift)) instance_destroy();
 if(keyboard_check_pressed(vk_enter)) switch(opt_behav){
 	case 1:
@@ -42,6 +42,8 @@ if(keyboard_check_pressed(vk_enter)) switch(opt_behav){
 				audio_play_sound(snd_txt_test1, 1, false);
 				break;
 		}
+		break;
+	case 3:
 		break;
 }
 switch(opt_behav){

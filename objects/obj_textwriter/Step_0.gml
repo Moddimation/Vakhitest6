@@ -1,11 +1,12 @@
-if(!printdone) if(is_array(textmessage)) textorigin=textmessage[txtglcount]; else textorigin=textmessage;
+if(!printdone) if(is_array(textmessage)) textorigin=self.textmessage[txtglcount]; else textorigin=self.textmessage;
+
 if(string_char_at(textorigin, textpos) != "%"){
 	if(textstatic) { 
 		var prinaa=textorigin;
 		if(string_char_at(textorigin, string_length(textorigin)) == "%") prinaa = string_delete(textorigin, string_length(textorigin), 1); 
 		if(!printdone) textcurrent += prinaa;
 		if(string_last_pos("%", textorigin)==0) { 
-			textcurrent+="\n"; 
+			textcurrent+="\n";
 			txtglcount++; 
 			textpos=1; 
 			lineno++; 

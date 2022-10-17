@@ -14,7 +14,7 @@ if(!blockinput){
 		walkright();
 	}
 	if(not keyboard_check(vk_down) and not keyboard_check(vk_up) and not keyboard_check(vk_left) and not keyboard_check(vk_right)){
-		image_speed=0; image_index=0;
+		image_speed=0; image_index=2;
 	} else {
 		if(!keyboard_check(vk_up)) isdir[1]=false;
 		if(!keyboard_check(vk_down)) isdir[2]=false;

@@ -1,0 +1,3 @@
+plant type 1
+exists
+if player is in bounds/2 and pressed backspace, start dissolving and block player for 20 frames, then add to inventory(yet to make)

@@ -1,4 +1,4 @@
-if(textstatic) textcurrent="";
+if(textstatic) self.textcurrent="";
 else textcurrent = [];
 textpos=1;
 lineno=0;
@@ -15,7 +15,6 @@ textfont=font_default;
 textendexecuted=false;
 
 function txtcolor(_tx_color){
-	show_debug_message(string(_tx_color))
 	switch(_tx_color){
 		case string("WH"):
 			return c_white;

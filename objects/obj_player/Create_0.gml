@@ -11,6 +11,8 @@ facing=0;
 isdir[1]= 0;
 
 if(global.debug) instance_create_layer(0, 0, "Instances", DebugSwitch);
+instance_create_layer(0, 0, "Instances", obj_t_shortcuts);
+
 isAndroid = os_type==os_android;
 if(isAndroid){
 	andrbutt_enter = instance_create_depth(0, 0, -100, obj_button_enter);
