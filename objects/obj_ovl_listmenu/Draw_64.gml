@@ -11,7 +11,7 @@ if(!ranit) {
 			i=1;
 		}
 		if(j>xnum) {
-			i=-1;
+			break;
 		}
 		if(opt_msgid==-1){
 			if(opt_num=30) break;

@@ -1,7 +1,7 @@
 walkspeed = 4;
 global.menum=room;
 image_speed = walkspeed/7;
-collspeed=6;
+collspeed=1;
 blockinput=false; blockmoving=false;
 var plscale=2.5;
 image_xscale = plscale;

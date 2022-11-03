@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parantBound",
+    "path": "objects/obj_parantBound/obj_parantBound.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

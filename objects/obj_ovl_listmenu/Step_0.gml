@@ -17,9 +17,6 @@ if(keyboard_check_pressed(vk_enter)) switch(opt_behav){
 	case 2:
 		switch(opt_num){
 			case 0:
-				j=3;
-				opt_num=3;
-				audio_play_sound(snd_txt_test1, 1, false);
 				break;
 			case 1:
 				room_goto(menu_test);

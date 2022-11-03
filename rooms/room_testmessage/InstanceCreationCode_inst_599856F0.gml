@@ -1,0 +1,1 @@
+self.solid=false

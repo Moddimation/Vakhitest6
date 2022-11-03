@@ -58,10 +58,15 @@ function texttable(_msgid){
 			global.msg[1] = " a person called XY\n enjoyed living his\n everyday life.$>035 %";
 			global.msg[2] = " Until$>002.$>003.$>003.$>028 %";
 			global.msg[3] = " putin ate this text\n THE END lol s$>040 %";
+			global.msg[4] = " $>050 %";
+			global.msg[5] = " $>050 %";
+			global.msg[6] = " $>050 %";
+			global.msg[7] = " $>050 %";
+			global.msg[8] = " $>050 %";
 			global.msg[9] = " $>050 %";
 			break;
 		case 10:
-			global.msg[0] = "$>67$>50 $>4WH * I can move!$>002\n   So i have sensation.$>002 %";
+			global.msg[0] = "bro";
 			break;
 		default:
 			global.msg[0] = "ERROR%";
