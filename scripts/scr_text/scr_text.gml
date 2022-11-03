@@ -52,20 +52,12 @@ function texttable(_msgid){
 			break;
 		case 8:
 			global.msg[0] = "$>68 Hello there,\n this game is very basic at the\n moment, and very unfinished.....................\n$>4GY  May your adventure begin... \n\n";
-			global.msg[1] = "$>67$>50$>4WH * I dont hurt anywhere.$>008\n * I'm not cold$>008\n * My eyes...$>002 won't open$>001?$>008 ";
-			global.msg[2] = " * I can't see anything!$>006\n * My hands...$>004 my feet...$>005\n   i cant feel them.$>008 ";
-			global.msg[3] = " * my body...$>006\n * Can i press the arrow keys\n   to move around?$>004\n   ...\n$>003   wait, you have the keyboard.\n$>002   (press the arrow keys) %";
 			break;
 		case 9:
 			global.msg[0] = " $>68Somewhere, far away\n from this planet$>035 %";
 			global.msg[1] = " a person called XY\n enjoyed living his\n everyday life.$>035 %";
 			global.msg[2] = " Until$>002.$>003.$>003.$>028 %";
-			global.msg[3] = " a stranger was\n approaching rapidly\n from behind.$>035 %";
-			global.msg[4] = " Holding a knife,\n he fatally injured\n the person.$>035 %";
-			global.msg[5] = " He painfully collapsed,\n thinking about his life.$>035 %";
-			global.msg[6] = " Suddenly, a voice\n he never heard before,\n began speaking\n inside his head.$>035 %";
-			global.msg[7] = " he somehow started acquiring\n magical skills,\n depending on his suffering.$>035 %";
-			global.msg[8] = " But when he actually died...$>040 %";
+			global.msg[3] = " putin ate this text\n THE END lol s$>040 %";
 			global.msg[9] = " $>050 %";
 			break;
 		case 10:

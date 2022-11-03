@@ -103,7 +103,6 @@
     {"id":{"name":"obj_t_shortcuts","path":"objects/obj_t_shortcuts/obj_t_shortcuts.yy",},"order":8,},
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},"order":3,},
     {"id":{"name":"bg_debugmain","path":"sprites/bg_debugmain/bg_debugmain.yy",},"order":2,},
-    {"id":{"name":"room_storytest","path":"rooms/room_storytest/room_storytest.yy",},"order":4,},
     {"id":{"name":"tile_spawnD","path":"sprites/tile_spawnD/tile_spawnD.yy",},"order":8,},
     {"id":{"name":"obj_button_dbgbound","path":"objects/obj_button_dbgbound/obj_button_dbgbound.yy",},"order":1,},
     {"id":{"name":"to_do","path":"notes/to_do/to_do.yy",},"order":0,},
@@ -142,7 +141,6 @@
     {"roomId":{"name":"room_error","path":"rooms/room_error/room_error.yy",},},
     {"roomId":{"name":"menu_test_txtsnd","path":"rooms/menu_test_txtsnd/menu_test_txtsnd.yy",},},
     {"roomId":{"name":"menu_test_txtmus","path":"rooms/menu_test_txtmus/menu_test_txtmus.yy",},},
-    {"roomId":{"name":"room_storytest","path":"rooms/room_storytest/room_storytest.yy",},},
     {"roomId":{"name":"template","path":"rooms/template/template.yy",},},
     {"roomId":{"name":"room_debugway0","path":"rooms/room_debugway0/room_debugway0.yy",},},
   ],
@@ -178,10 +176,10 @@
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
   "TextureGroups": [
-    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.8.1.36",
+    "IDEVersion": "2022.0.0.19",
   },
 }
