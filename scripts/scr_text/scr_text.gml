@@ -54,16 +54,16 @@ function texttable(_msgid){
 			global.msg[0] = "$>68 Hello there,\n this game is very basic at the\n moment, and very unfinished.....................\n$>4GY  May your adventure begin... \n\n";
 			break;
 		case 9:
-			global.msg[0] = " $>68Somewhere, far away\n from this planet$>035 %";
-			global.msg[1] = " a person called XY\n enjoyed living his\n everyday life.$>035 %";
-			global.msg[2] = " Until$>002.$>003.$>003.$>028 %";
-			global.msg[3] = " putin ate this text\n THE END lol s$>040 %";
-			global.msg[4] = " $>050 %";
-			global.msg[5] = " $>050 %";
-			global.msg[6] = " $>050 %";
-			global.msg[7] = " $>050 %";
-			global.msg[8] = " $>050 %";
-			global.msg[9] = " $>050 %";
+			global.msg[0] = " $>68Hello,$>035 %";
+			global.msg[1] = " this \"game\" is\n just a test.$>035 %";
+			global.msg[2] = " testing around with random stuff.$>028 %";
+			global.msg[3] = " PRESS ENTER$>040 %";
+			global.msg[4] = " PRESS ENTER$>040 %";
+			global.msg[5] = " PRESS ENTER$>040 %";
+			global.msg[6] = " PRESS ENTER$>040 %";
+			global.msg[7] = " PRESS ENTER$>040 %";
+			global.msg[8] = " PRESS ENTER$>040 %";
+			global.msg[9] = " PRESS ENTER$>040 %";
 			break;
 		case 10:
 			global.msg[0] = "bro";
