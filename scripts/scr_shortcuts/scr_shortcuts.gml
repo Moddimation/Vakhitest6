@@ -9,8 +9,11 @@ function inventory_add(_itemname){
 	for(i=0; i!=30; i++){
 		if(global.items[i].name == "Empty"){
 			global.items[i] = _itemname;
-			show_debug_message(global.items);
 			break;
 		}
 	}
+}
+function log(_string)
+{
+    if(global.debug) show_debug_message(object_get_name(id.object_index) + "[" + string(id.x) + "," + string(id.y) + "]: " + string(_string));
 }

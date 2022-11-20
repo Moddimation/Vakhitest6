@@ -1,5 +1,4 @@
 if(global.debug){
-	show_debug_message(string(global.menum));
 	if(room==menu_debugmain) room_goto(global.menum);
 	else instance_create_depth(x, y, 100, obj_ovl_listmenu, {
 				opt_behav : 2,

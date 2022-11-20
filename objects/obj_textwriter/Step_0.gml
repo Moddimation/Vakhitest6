@@ -2,6 +2,7 @@ if(!printdone) if(is_array(textmessage)) textorigin=self.textmessage[txtglcount]
 
 if(string_char_at(textorigin, textpos) != "%"){
 	if(textstatic) { 
+		if(is_array(textcurrent)) textcurrent="";
 		var prinaa=textorigin;
 		if(string_char_at(textorigin, string_length(textorigin)) == "%") prinaa = string_delete(textorigin, string_length(textorigin), 1); 
 		if(!printdone) textcurrent += prinaa;
@@ -13,6 +14,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 		} else printdone=1 
 	}  
 	else {
+		if(!is_array(textcurrent)) textcurrent=[];
 	    if(textpos<=string_length(textorigin)){
 			if(keyboard_check(vk_shift)&&msg_end_bhv==0){
 				txtskip=true;
@@ -61,7 +63,6 @@ if(string_char_at(textorigin, textpos) != "%"){
 				}
 			}
 			if(string_char_at(textorigin, textpos) == "\n") newline=true;
-			
 	        if(linepos>maxlinepos||newline){ //make a newline
 				array_push(textcurrent,{
 						txchar : "\n",

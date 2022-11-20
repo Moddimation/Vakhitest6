@@ -9,6 +9,7 @@ image_yscale = plscale;
 image_alpha=0.84;
 facing=0;
 isdir[1]= 0;
+log("test");
 
 if(global.debug) instance_create_layer(0, 0, "Instances", DebugSwitch);
 instance_create_layer(0, 0, "Instances", obj_t_shortcuts);

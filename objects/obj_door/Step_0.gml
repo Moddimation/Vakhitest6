@@ -5,7 +5,6 @@ if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player,
 		fade_colid : 1,
 		fade_speed : 0.04
 	})}
-	show_debug_message(roomchange)
 if(roomchange&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbox_bottom+10, obj_player, false, true)){
 	global.lastdoorid=self.doorid;
 	obj_player.blockinput=true;
@@ -35,7 +34,6 @@ if(roomchange&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbo
 }
 function gotoroom()
 {
-	show_debug_message("Heheheh")
 	global.spawnid=spwnid;
 	roomchange=false;
 	obj_player.blockinput=false;

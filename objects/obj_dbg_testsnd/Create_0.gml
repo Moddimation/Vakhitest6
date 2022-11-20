@@ -1,7 +1,6 @@
 global.msg[0]="- TEXTWRITER VOCAL TEST -";
 global.msg[1]="* Press the L/R Arrow Key$&  to navigate through sounds";
 global.msg[2]="  Good Luck%";
-show_debug_message("asshole");
 wowie=instance_create_depth(x, y, -10, obj_textwriter, {
 	textmessage : global.msg,
 	textstatic : false,

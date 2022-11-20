@@ -1,4 +1,4 @@
-if(textstatic) self.textcurrent="";
+if(textstatic) textcurrent="";
 else textcurrent = [];
 textpos=1;
 lineno=0;
