@@ -1,7 +1,7 @@
 walkspeed = 4;
 global.menum=room;
 image_speed = walkspeed/7;
-collspeed=1;
+collspeed=walkspeed/2;
 blockinput=false; blockmoving=false;
 var plscale=2.5;
 image_xscale = plscale;
@@ -27,58 +27,70 @@ if(isAndroid){
 }
 
 function walkup(){
-		if(place_free(x, y-collspeed)){ 
+		var function dowalk(){
 			y-=walkspeed;
 			if(facing==0 or facing==2 or not isdir[facing]) facing=1;
 			isdir[1]=true;
 		}
+		if(facing==3 and place_free(bbox_right+collspeed, y-collspeed)) dowalk();
+		if(facing==4 and place_free(bbox_left-collspeed, y-collspeed)) dowalk();
+		if(facing!=3 and facing !=4 and place_free(x, y-collspeed)) dowalk();
 		else image_speed=0;
 }
 function walkdown(){
-		if(place_free(x, y+collspeed)){ 
+		var function dowalk(){
 			y+=walkspeed;
 			if(facing==0 or facing==1 or not isdir[facing]) facing=2;
 			isdir[2]=true;
 		}
+		if(facing==3 and place_free(bbox_right+collspeed, y+collspeed)) dowalk();
+		if(facing==4 and place_free(bbox_left-collspeed, y+collspeed)) dowalk();
+		if(facing!=3 and facing !=4 and place_free(x, y+collspeed)) dowalk();
 		else image_speed=0;
 }
 function walkleft(){
-		if(place_free(x-collspeed, y)){ 
+		var function dowalk(){ 
 			x-=walkspeed;
 			if(facing==0 or facing==4 or not isdir[facing]) facing=3;
 			isdir[3]=true;
 		}
+		if(facing==1 and place_free(x-collspeed, bbox_bottom+collspeed)) dowalk();
+		if(facing==2 and place_free(x-collspeed, bbox_top-collspeed)) dowalk();
+		if(facing!=1 and facing !=2 and place_free(x-collspeed, y)) dowalk();
 		else image_speed=0;
 }
 function walkright(){
-		if(place_free(x+collspeed, y)){ 
+		var function dowalk(){ 
 			x+=walkspeed;
 			if(facing==0 or facing==3 or not isdir[facing]) facing=4;
 			isdir[4]=true;
 		}
+		if(facing==1 and place_free(x+collspeed, bbox_bottom+collspeed*2)) dowalk();
+		if(facing==2 and place_free(x+collspeed, bbox_top-collspeed*2)) dowalk();
+		if(facing!=1 and facing !=2 and place_free(x+collspeed, y)) dowalk();
 		else image_speed=0;
 }
 function walkbackup(){
-		if(!place_free(x, y-collspeed)){ 
-			y+=walkspeed;
+		if(!place_free(x, y-collspeed*2)){ 
+			y+=walkspeed*2;
 			image_speed=0;
 		}
 }
 function walkbackdown(){
-		if(!place_free(x, y+collspeed)){ 
-			y-=walkspeed;
+		if(!place_free(x, y+collspeed*2)){ 
+			y-=walkspeed*2;
 			image_speed=0;
 		}
 }
 function walkbackleft(){
-		if(!place_free(x-collspeed, y)){ 
-			x+=walkspeed;
+		if(!place_free(x-collspeed*2, y)){ 
+			x+=walkspeed*2;
 			image_speed=0;
 		}
 }
 function walkbackright(){
-		if(!place_free(x+collspeed, y)){ 
-			x-=walkspeed;
+		if(!place_free(x+collspeed*2, y)){ 
+			x-=walkspeed*2;
 			image_speed=0;
 		}
 }
