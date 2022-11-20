@@ -72,26 +72,26 @@ function walkright(){
 		else image_speed=0;
 }
 function walkbackup(){
-		if(!place_free(x, y-collspeed*2)){ 
-			y+=walkspeed*2;
+		if(!place_free(x, y-collspeed)){ 
+			y+=walkspeed;
 			image_speed=0;
 		}
 }
 function walkbackdown(){
-		if(!place_free(x, y+collspeed*2)){ 
-			y-=walkspeed*2;
+		if(!place_free(x, y+collspeed)){ 
+			y-=walkspeed;
 			image_speed=0;
 		}
 }
 function walkbackleft(){
-		if(!place_free(x-collspeed*2, y)){ 
-			x+=walkspeed*2;
+		if(!place_free(x-collspeed, y)){ 
+			x+=walkspeed;
 			image_speed=0;
 		}
 }
 function walkbackright(){
-		if(!place_free(x+collspeed*2, y)){ 
-			x-=walkspeed*2;
+		if(!place_free(x+collspeed, y)){ 
+			x-=walkspeed;
 			image_speed=0;
 		}
 }
