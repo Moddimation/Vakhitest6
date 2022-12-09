@@ -1,7 +1,7 @@
 global.debug=true; //dont you dare (:
 if(global.debug) {
 	global.show_bound=false;
-	global.show_info=false;
+	global.show_info=true;
 }
 
 global.menum=0; //show_bound=show debug textures for boundaries doors spawns etc

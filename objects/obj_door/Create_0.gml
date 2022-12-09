@@ -55,6 +55,7 @@ doorentering=false;
 	
 function gotoroom()
 {
+	log("going to room "+string(nextroom))
 	global.spawnid=spwnid;
 	roomchange=false;
 	obj_player.blockinput=false;

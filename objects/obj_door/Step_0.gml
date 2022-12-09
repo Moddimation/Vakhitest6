@@ -5,7 +5,7 @@ if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player,
 		fade_colid : 1,
 		fade_speed : 0.05
 	})}
-if(roomchange&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbox_bottom+10, obj_player, false, true)){
+if(roomchange){
 	global.lastdoorid=self.doorid;
 	obj_player.blockinput=true;
 	obj_player.blockmoving=true;
@@ -19,11 +19,11 @@ if(roomchange&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbo
 			else gotoroom()
 			break;
 		case -90: //DOWN
-			if(obj_player.y<y+walkoffset) { obj_player.y+=obj_player.walkspeed; obj_player.sprite_index = anm_rumuwalkdown; }
+			if(obj_player.y<self.y+walkoffset) { obj_player.y+=obj_player.walkspeed; obj_player.sprite_index = anm_rumuwalkdown; }
 			else gotoroom()
 			break;
 		case 90: //UP
-			if(obj_player.y>y-walkoffset) { obj_player.y-=obj_player.walkspeed; obj_player.sprite_index = anm_rumuwalkup; }
+			if(obj_player.y>self.y-walkoffset) { obj_player.y-=obj_player.walkspeed; obj_player.sprite_index = anm_rumuwalkup; }
 			else gotoroom()
 			break;
 		case -180: //LEFT
