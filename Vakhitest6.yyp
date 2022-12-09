@@ -58,6 +58,7 @@
     {"id":{"name":"DebugSwitch","path":"objects/DebugSwitch/DebugSwitch.yy",},"order":0,},
     {"id":{"name":"obj_coll_longL","path":"objects/obj_coll_longL/obj_coll_longL.yy",},"order":0,},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},"order":4,},
+    {"id":{"name":"room_TESTpub","path":"rooms/room_TESTpub/room_TESTpub.yy",},"order":7,},
     {"id":{"name":"obj_button_up","path":"objects/obj_button_up/obj_button_up.yy",},"order":7,},
     {"id":{"name":"obj_coll_small","path":"objects/obj_coll_small/obj_coll_small.yy",},"order":2,},
     {"id":{"name":"obj_dbg_testanim","path":"objects/obj_dbg_testanim/obj_dbg_testanim.yy",},"order":2,},
@@ -147,6 +148,7 @@
     {"roomId":{"name":"template","path":"rooms/template/template.yy",},},
     {"roomId":{"name":"room_debugway0","path":"rooms/room_debugway0/room_debugway0.yy",},},
     {"roomId":{"name":"mt","path":"rooms/mt/mt.yy",},},
+    {"roomId":{"name":"room_TESTpub","path":"rooms/room_TESTpub/room_TESTpub.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":14,},

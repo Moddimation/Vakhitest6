@@ -11,13 +11,12 @@ if(textgui){
 					charrrwidth=-1;
 					break;
 			}
-			if(textcurrent[i].txchar == "\n") { line++; charr=-1; charrr=0;} 
+			if(textcurrent[i].txchar == "\n") { line++; charr=-1; charrr=0;}
+			draw_text_transformed_color(x+(((charr*(chrwidth+charrrwidth))*textsize)/charr)*charr+random(textcurrent[i].txrand)+(charrr*(chrwidth+charrrwidth)*0.96), y+(line*string_height("M")*textsize)+random(textcurrent[i].txrand), string(textcurrent[i].txchar), textsize, textsize, image_angle, textcurrent[i].txcolor, textcurrent[i].txcolor, textcurrent[i].txcolor, textcurrent[i].txcolor, 255);
 			if(textcurrent[i].txchar == "I" || textcurrent[i].txchar == "i" || textcurrent[i].txchar == "l" || textcurrent[i].txchar == "." || textcurrent[i].txchar == ",") {
-				draw_text_transformed_color(x+(((charr*(chrwidth+charrrwidth))*textsize)/(charr))*(charr)+random(textcurrent[i].txrand)+(charrr*(chrwidth+charrrwidth)*0.9), y+(line*string_height("M")*textsize)+random(textcurrent[i].txrand), string(textcurrent[i].txchar), textsize, textsize, image_angle, textcurrent[i].txcolor, textcurrent[i].txcolor, textcurrent[i].txcolor, textcurrent[i].txcolor, 255);
-				charrr++;
+				charrr+=textcurrent[i].txsize/1.5;
 			}
 			else {
-				draw_text_transformed_color(x+(((charr*(chrwidth+charrrwidth))*textsize)/charr)*charr+random(textcurrent[i].txrand)+(charrr*(chrwidth+charrrwidth)*0.96), y+(line*string_height("M")*textsize)+random(textcurrent[i].txrand), string(textcurrent[i].txchar), textsize, textsize, image_angle, textcurrent[i].txcolor, textcurrent[i].txcolor, textcurrent[i].txcolor, textcurrent[i].txcolor, 255);
 				charr++;
 			}
 		}

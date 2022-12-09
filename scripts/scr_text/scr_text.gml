@@ -14,10 +14,11 @@ function texttable(_msgid){
 			global.msg[2] = "  Hello$>204 Dear World";
 			global.msg[3] = " $>200 Hello$>110 $>4GYDear World$>100 $>4WH";
 			global.msg[4] = " $>200 Hello$>105 D e a r   W o r l d $>100";
-			global.msg[5] = "  Hello$>207 $>112D$>108 e a r   W o r l d $>015 ";
-			global.msg[6] = "  $>100$>212AAHHHH$>3%";
-			global.msg[7] = "  if you see this,";
-			global.msg[8] = "  i fucked up smh%";
+			global.msg[5] = "  mim mIm mlm m.m m,m$>016";
+			global.msg[6] = "  Hello$>207 $>112D$>108 e a r   W o r l d $>010 ";
+			global.msg[7] = "  $>100$>212AAHHHH$>3%";
+			global.msg[8] = "  if you see this,";
+			global.msg[9] = "  i fucked up smh%";
 			break;
 		case 3:
 			global.msg[0] = " DEBUG MENU HUB";

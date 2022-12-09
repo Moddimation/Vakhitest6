@@ -1,7 +1,7 @@
 if(keyboard_check_pressed(vk_left)&&j>1) { j--; opt_num--; }
 if(keyboard_check_pressed(vk_right)&&j<xnum) { j++; opt_num++; }
-if(keyboard_check_pressed(vk_up)&&i>1) { i--; opt_num-=ynum; }
-if(keyboard_check_pressed(vk_down)&&i<ynum) { i++; opt_num+=ynum; }
+if(keyboard_check_pressed(vk_up)&&i>1) { i--; opt_num--; }
+if(keyboard_check_pressed(vk_down)&&i<ynum) { i++; opt_num++; }
 if(keyboard_check_pressed(vk_shift)) instance_destroy();
 if(keyboard_check_pressed(vk_enter)) switch(opt_behav){
 	case 1:
@@ -15,8 +15,12 @@ if(keyboard_check_pressed(vk_enter)) switch(opt_behav){
 		}
 		break;
 	case 2:
+	log(opt_num)
 		switch(opt_num){
 			case 0:
+				i=5;
+				opt_num=4;
+				audio_play_sound(snd_txt_test1, 1, false);
 				break;
 			case 1:
 				room_goto(menu_test);
@@ -48,7 +52,7 @@ switch(opt_behav){
 		break;
 	case 2:
 		if(opt_num==0){
-				j=5;
+				i=5;
 				opt_num=4;
 				audio_play_sound(snd_txt_test1, 1, false);
 		}

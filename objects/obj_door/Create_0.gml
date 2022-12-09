@@ -52,3 +52,14 @@ doorentering=false;
 			obj_player.y=y;
 		}
 	}
+	
+function gotoroom()
+{
+	global.spawnid=spwnid;
+	roomchange=false;
+	obj_player.blockinput=false;
+	obj_player.blockmoving=false;
+//	obj_player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
+	global.menum = room;
+	room_goto(nextroom);
+}

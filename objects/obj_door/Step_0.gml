@@ -3,7 +3,7 @@ if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player,
 	fadethis = instance_create_depth(0, 0, -200, obj_fade, {
 		fade_type : 2,
 		fade_colid : 1,
-		fade_speed : 0.04
+		fade_speed : 0.05
 	})}
 if(roomchange&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbox_bottom+10, obj_player, false, true)){
 	global.lastdoorid=self.doorid;
@@ -32,16 +32,7 @@ if(roomchange&&collision_rectangle(bbox_left-10, bbox_top-10, bbox_right+10, bbo
 			break;
 	}
 }
-function gotoroom()
-{
-	global.spawnid=spwnid;
-	roomchange=false;
-	obj_player.blockinput=false;
-	obj_player.blockmoving=false;
-//	obj_player.x=0; //REMOVE THIS LINE IF STARTPOINTS ARE DONE
-	global.menum = room;
-	room_goto(nextroom);
-}
+
 
 if(global.spawnid==doorid&&doorentering){
 	obj_player.blockinput=true;
