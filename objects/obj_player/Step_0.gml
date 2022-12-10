@@ -1,6 +1,7 @@
 //MOVEMENT
 image_speed = walkspeed/7;
 if(!blockinput){
+	//if(isdir[1]==0 and isdir[2]==0 and isdir[3]==0 and isdir[4]==0) isdir[2] = 1;
 	if(keyboard_check(vk_up)){
 		walkup();
 	}

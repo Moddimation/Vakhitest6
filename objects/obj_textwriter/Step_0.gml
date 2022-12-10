@@ -73,8 +73,15 @@ if(string_char_at(textorigin, textpos) != "%"){
 				});
 				newline=false;
 	            lineno++;
-	            //textpos++;
+	            textpos++;
 	            linepos=0;
+				array_push(textcurrent,{
+						txchar : " ",
+						txrand : charrand,
+						txcolor : textcolor,
+						txsize : textsize,
+						txfont : textfont,
+				});
 	            if(!txtskip) timercount+=timeoff*4;
 	        }
 	        if(timercount==-1&&!txtskip){//reset timercount

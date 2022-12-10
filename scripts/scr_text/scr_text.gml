@@ -55,8 +55,8 @@ function texttable(_msgid){
 			global.msg[0] = "$>68 Hello there,\n this game is very basic at the\n moment, and very unfinished.....................\n$>4GY  May your adventure begin... \n\n";
 			break;
 		case 9:
-			global.msg[0] = " $>68Welcome to Vakhitest 6.$>005 \n INTRO TEST$>030 %";
-			global.msg[1] = " This \"game\" is\n just a test.$>035 %";
+			global.msg[0] = " $>68Welcome to Vakhitest 6.$>005\n> INTRO TEST$>030 %";
+			global.msg[1] = " This \"game\" is\njust a test.$>035 %";
 			global.msg[2] = " testing around with random stuff.$>028 %";
 			global.msg[3] = " %";
 			break;

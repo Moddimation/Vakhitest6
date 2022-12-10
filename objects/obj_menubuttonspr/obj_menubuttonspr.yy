@@ -41,7 +41,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "group_menu",
-    "path": "folders/Objects/group_menu.yy",
+    "name": "group_mechanic",
+    "path": "folders/Objects/group_mechanic.yy",
   },
 }

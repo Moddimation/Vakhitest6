@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "group_tile",
-    "path": "folders/Sprites/group_tile.yy",
+    "name": "group_tile_debug",
+    "path": "folders/Sprites/group_tile/group_tile_debug.yy",
   },
 }

@@ -8,7 +8,7 @@ image_xscale = plscale;
 image_yscale = plscale;
 image_alpha=0.84;
 facing=0;
-isdir[1]= 0;
+isdir[4]= 0;
 log("test");
 
 if(global.debug) instance_create_layer(0, 0, "Instances", DebugSwitch);
@@ -32,44 +32,44 @@ function walkup(){
 			y-=walkspeed;
 			if(facing==0 or facing==2 or not isdir[facing]) facing=1;
 			isdir[1]=true;
-		}
-		if(facing==3 and place_free(bbox_right+collspeed, y-collspeed)) dowalk();
-		if(facing==4 and place_free(bbox_left-collspeed, y-collspeed)) dowalk();
-		if(facing!=3 and facing !=4 and place_free(x, y-collspeed)) dowalk();
-		else image_speed=0;
+		}dowalk();
+		//if(facing==3 and place_free(bbox_right+collspeed, y-collspeed)) dowalk();
+		//if(facing==4 and place_free(bbox_left-collspeed, y-collspeed)) dowalk();
+		//if(facing!=3 and facing !=4 and place_free(x, y-collspeed)) dowalk();
+		//else image_speed=0;
 }
 function walkdown(){
 		var function dowalk(){
 			y+=walkspeed;
 			if(facing==0 or facing==1 or not isdir[facing]) facing=2;
 			isdir[2]=true;
-		}
-		if(facing==3 and place_free(bbox_right+collspeed, y+collspeed)) dowalk();
-		if(facing==4 and place_free(bbox_left-collspeed, y+collspeed)) dowalk();
-		if(facing!=3 and facing !=4 and place_free(x, y+collspeed)) dowalk();
-		else image_speed=0;
+		}dowalk();
+		//if(facing==3 and place_free(bbox_right+collspeed, y+collspeed)) dowalk();
+		//if(facing==4 and place_free(bbox_left-collspeed, y+collspeed)) dowalk();
+		//if(facing!=3 and facing !=4 and place_free(x, y+collspeed)) dowalk();
+		//else image_speed=0;
 }
 function walkleft(){
 		var function dowalk(){ 
 			x-=walkspeed;
 			if(facing==0 or facing==4 or not isdir[facing]) facing=3;
 			isdir[3]=true;
-		}
-		if(facing==1 and place_free(x-collspeed, bbox_bottom+collspeed)) dowalk();
-		if(facing==2 and place_free(x-collspeed, bbox_top-collspeed)) dowalk();
-		if(facing!=1 and facing !=2 and place_free(x-collspeed, y)) dowalk();
-		else image_speed=0;
+		}dowalk();
+		//if(facing==1 and place_free(x-collspeed, bbox_bottom+collspeed)) dowalk();
+		//if(facing==2 and place_free(x-collspeed, bbox_top-collspeed)) dowalk();
+		//if(facing!=1 and facing !=2 and place_free(x-collspeed, y)) dowalk();
+		//else image_speed=0;
 }
 function walkright(){
 		var function dowalk(){ 
 			x+=walkspeed;
 			if(facing==0 or facing==3 or not isdir[facing]) facing=4;
 			isdir[4]=true;
-		}
-		if(facing==1 and place_free(x+collspeed, bbox_bottom+collspeed*2)) dowalk();
-		if(facing==2 and place_free(x+collspeed, bbox_top-collspeed*2)) dowalk();
-		if(facing!=1 and facing !=2 and place_free(x+collspeed, y)) dowalk();
-		else image_speed=0;
+		}dowalk();
+		//if(facing==1 and place_free(x+collspeed, bbox_bottom+collspeed*2)) dowalk();
+		//if(facing==2 and place_free(x+collspeed, bbox_top-collspeed*2)) dowalk();
+		//if(facing!=1 and facing !=2 and place_free(x+collspeed, y)) dowalk();
+		//else image_speed=0;
 }
 function walkbackup(){
 		if(!place_free(x, y-collspeed)){ 

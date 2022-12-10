@@ -7,7 +7,7 @@ mytext = instance_create_depth(sizex+textoff-30,camera_get_view_height(0)-sizey+
 	textmessage : global.msg,
 	textstatic : false,
 	maxlineno : 2,
-	maxlinepos : 30,
+	maxlinepos : 29,
 	timeoff : timechar,
 	textsize : 2,
 	txt_snd : self.txtsnd,
