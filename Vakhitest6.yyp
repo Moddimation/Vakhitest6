@@ -11,6 +11,7 @@
     {"id":{"name":"tile_boundlongR","path":"sprites/tile_boundlongR/tile_boundlongR.yy",},"order":1,},
     {"id":{"name":"tile_spawnC","path":"sprites/tile_spawnC/tile_spawnC.yy",},"order":7,},
     {"id":{"name":"room_debughub","path":"rooms/room_debughub/room_debughub.yy",},"order":1,},
+    {"id":{"name":"bg_TESTpub","path":"sprites/bg_TESTpub/bg_TESTpub.yy",},"order":7,},
     {"id":{"name":"snd_txt_test3","path":"sounds/snd_txt_test3/snd_txt_test3.yy",},"order":3,},
     {"id":{"name":"menu_test","path":"rooms/menu_test/menu_test.yy",},"order":1,},
     {"id":{"name":"tile_spawnB","path":"sprites/tile_spawnB/tile_spawnB.yy",},"order":6,},
