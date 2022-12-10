@@ -73,7 +73,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 				});
 				newline=false;
 	            lineno++;
-	            textpos++;
+	            //textpos++;
 	            linepos=0;
 	            if(!txtskip) timercount+=timeoff*4;
 	        }
@@ -81,7 +81,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 	            if(txtslow==0) timercount=timeoff;
 				else timercount=txtslow;
 	        } else if(!txtskip) timercount--;
-	        if(timercount==0 and !printdone) { //assign current letter to textcurrent, print textcurrent in draw event
+	        if(timercount==0 and !printdone and not newline) { //assign current letter to textcurrent, print textcurrent in draw event
 				var txtchar = string_char_at(textorigin, textpos);
 	            //textcurrent += txchar; //basically the core...
 				array_push(textcurrent,{
@@ -92,6 +92,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 						txfont : textfont,
 				});
 	            textpos++;
+				linepos++;
 				if(ord(txtchar)>33) switch(txt_snd){
 						case 1:
 							audio_play_sound(snd_txt_test0, 1, false);
@@ -126,6 +127,7 @@ if(string_char_at(textorigin, textpos) != "%"){
 					txtglcount++; 
 					textpos=1;
 					lineno++;
+					linepos=0;
 					array_push(textcurrent,{
 							txchar : "\n",
 							txrand : charrand,

@@ -32,6 +32,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24FB2E6","properties":[],"isDnd":false,"objectId":{"name":"obj_coll_small","path":"objects/obj_coll_small/obj_coll_small.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":11.03125,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":30.0,"y":630.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2618E9CF","properties":[],"isDnd":false,"objectId":{"name":"obj_coll_longR","path":"objects/obj_coll_longR/obj_coll_longR.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":419.49493,"y":630.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5CE7ACB2","properties":[],"isDnd":false,"objectId":{"name":"obj_coll_small","path":"objects/obj_coll_small/obj_coll_small.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":21.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":750.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6BB35546","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"_mesgtxt","path":"objects/obj_info/obj_info.yy",},"objectId":{"name":"obj_info","path":"objects/obj_info/obj_info.yy",},"value":"cannot enter da door(its fake lol)",},
+          ],"isDnd":false,"objectId":{"name":"obj_info","path":"objects/obj_info/obj_info.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":660.0,"y":90.0,},
       ],"visible":true,"depth":290,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":30,"gridY":30,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"bg_TESTpub","path":"sprites/bg_TESTpub/bg_TESTpub.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":390,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":30,"gridY":30,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
@@ -49,6 +52,7 @@
     {"name":"inst_24FB2E6","path":"rooms/room_TESTpub/room_TESTpub.yy",},
     {"name":"inst_2618E9CF","path":"rooms/room_TESTpub/room_TESTpub.yy",},
     {"name":"inst_5CE7ACB2","path":"rooms/room_TESTpub/room_TESTpub.yy",},
+    {"name":"inst_6BB35546","path":"rooms/room_TESTpub/room_TESTpub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

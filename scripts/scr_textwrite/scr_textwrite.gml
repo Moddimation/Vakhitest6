@@ -53,3 +53,11 @@ function print_box(_msgid, _chartime, _txtsound=0){
 		txtsnd : _txtsound
 	});	
 }
+function print_boxtext(_texttxt, _chartime, _txtsound=0){
+	global.msg[0] = " "+string(_texttxt)+"%"
+	return instance_create_depth(0, 0, 150, obj_textbox, {
+		timechar : _chartime,
+		msgd : -1,
+		txtsnd : _txtsound
+	});	
+}

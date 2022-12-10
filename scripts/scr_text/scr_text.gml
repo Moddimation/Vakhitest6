@@ -61,9 +61,12 @@ function texttable(_msgid){
 			global.msg[3] = " %";
 			break;
 		case 10:
-			global.msg[0] = "bro";
+			global.msg[0] = " bro";
+			break;
+		case 11:
+			global.msg[0] = " You could\n put some info\n there%";
 			break;
 		default:
-			global.msg[0] = "ERROR%";
+			global.msg[0] = " ERROR%";
 	}
 }
