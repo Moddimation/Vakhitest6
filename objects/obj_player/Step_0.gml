@@ -43,3 +43,9 @@ if(!blockinput){
 } else if(!blockmoving){
 	image_speed=0; image_index=0;	
 }
+if(keyboard_check_pressed(vk_space)) testvar=1;
+if(testvar!=0) switch(testvar){
+	case 1:
+		if(objmove_time(400,400,1)) testvar=0;
+		break;
+}

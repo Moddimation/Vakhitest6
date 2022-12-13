@@ -1,1 +1,1 @@
-drawpre_chkPlLayer();
+objLayer_check();

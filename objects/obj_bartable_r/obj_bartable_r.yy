@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_npcbeep",
+  "name": "obj_bartable_r",
   "spriteId": {
-    "name": "anm_npcbeep",
-    "path": "sprites/anm_npcbeep/anm_npcbeep.yy",
+    "name": "spr_bartable_r",
+    "path": "sprites/spr_bartable_r/spr_bartable_r.yy",
   },
   "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_parantBound",
-    "path": "objects/obj_parantBound/obj_parantBound.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -33,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "group_npc",
-    "path": "folders/Objects/group_npc.yy",
+    "name": "group_overworld",
+    "path": "folders/Objects/group_overworld.yy",
   },
 }
