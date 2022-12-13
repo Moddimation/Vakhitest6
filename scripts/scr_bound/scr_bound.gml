@@ -3,16 +3,16 @@
 function objLayer_check(){
 	if(instance_exists(obj_player)){
 	//var _objX=(object_index.bbox_right-object_index.bbox_left)/2+object_index.bbox_left
-		if(obj_player.bbox_bottom < object_index.bbox_bottom) object_index.depth=obj_player.depth-10
-		else object_index.depth=obj_player.depth+10
+		if(obj_player.bbox_bottom < bbox_bottom) depth=obj_player.depth-10
+		else depth=obj_player.depth+10
 	}
 }
 function objmove_time(_x, _y, _t){
-	static _xres = (_x - object_index.x) / (_t * fps);
-	static _yres = (_y - object_index.y) / (_t * fps);
+	static _xres = (_x - instance_id.x) / (_t * fps);
+	static _yres = (_y - instance_id.y) / (_t * fps);
 	static _i = 0;
-	object_index.x += _xres;
-	object_index.y += _yres;
+	instance_id.x += _xres;
+	instance_id.y += _yres;
 	_i++;
 	if(_i > (_t * fps)) return true;
 	//log(string(_xres)+" "+string(_i))
