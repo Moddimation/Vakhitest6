@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bartable_r",
+  "name": "obj_bartable_l",
   "spriteId": {
-    "name": "spr_bartable_r",
-    "path": "sprites/spr_bartable_r/spr_bartable_r.yy",
+    "name": "spr_bartable_l",
+    "path": "sprites/spr_bartable_l/spr_bartable_l.yy",
   },
   "solid": true,
   "visible": true,
