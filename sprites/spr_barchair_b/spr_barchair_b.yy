@@ -1,8 +1,8 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "bg_TESTpub",
-  "bboxMode": 0,
+  "name": "spr_barchair_b",
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 0,
@@ -10,16 +10,16 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 779,
-  "bbox_top": 0,
-  "bbox_bottom": 659,
+  "bbox_left": -2,
+  "bbox_right": 23,
+  "bbox_top": 35,
+  "bbox_bottom": 55,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "DynamicTexturePage": false,
-  "width": 780,
-  "height": 660,
+  "width": 24,
+  "height": 58,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -28,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e132dcd8-e9e5-4a84-b6e6-db9e09c898f1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a790af16-946b-460f-a60e-e3713911bf0f",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "bg_TESTpub",
+    "name": "spr_barchair_b",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"37bd1831-454a-4c60-9cba-54e132d6a751","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e132dcd8-e9e5-4a84-b6e6-db9e09c898f1","path":"sprites/bg_TESTpub/bg_TESTpub.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8701e230-11d2-42e7-aa80-867aadf2cd42","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a790af16-946b-460f-a60e-e3713911bf0f","path":"sprites/spr_barchair_b/spr_barchair_b.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,11 +64,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8bfd51ad-15b2-41f3-9afd-abccd5dd6a21","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"df40e2d1-b35e-4954-a39a-311b330c3329","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Backgrounds",
-    "path": "folders/Backgrounds.yy",
+    "name": "group_tile_overworld",
+    "path": "folders/Sprites/group_tile/group_tile_overworld.yy",
   },
 }
